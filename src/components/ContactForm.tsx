@@ -174,10 +174,9 @@ export default function ContactForm({ type }: ContactFormProps) {
                   className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
                 >
                   <option value="">Select audience size</option>
-                  <option value="1-50">1-50 people</option>
-                  <option value="51-100">51-100 people</option>
-                  <option value="101-500">101-500 people</option>
-                  <option value="500+">500+ people</option>
+                  <option value="upto-500">Upto 500</option>
+                  <option value="500-1000">500-1000</option>
+                  <option value="1000+">1000+</option>
                 </select>
               </div>
             </div>
@@ -194,14 +193,10 @@ export default function ContactForm({ type }: ContactFormProps) {
                 className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
               >
                 <option value="">Select a topic</option>
-                <option value="business-automation">Business Process Automation</option>
-                <option value="brand-building">Brand Building & Strategy</option>
-                <option value="sales-training">Sales Training for SMEs</option>
-                <option value="marketing-training">Marketing Training for Startups</option>
-                <option value="digital-transformation">Digital Transformation</option>
+                <option value="branding-marketing">Branding & Marketing</option>
+                <option value="sales">Sales</option>
                 <option value="ai-integration">AI Integration in Business</option>
-                <option value="startup-growth">Startup Growth Strategies</option>
-                <option value="custom">Custom Topic</option>
+                <option value="business-automation">Business Process Automation</option>
               </select>
             </div>
 
@@ -220,7 +215,6 @@ export default function ContactForm({ type }: ContactFormProps) {
                 <option value="10k">₹10,000</option>
                 <option value="10k-25k">₹10,000 - ₹25,000</option>
                 <option value="25k+">₹25,000+</option>
-                <option value="international">International Event</option>
                 <option value="discuss">Prefer to Discuss</option>
                 <option value="discuss">Prefer to discuss</option>
               </select>
