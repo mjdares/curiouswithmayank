@@ -65,7 +65,7 @@ export default function ContactPage() {
                 Podcast Guest
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Share your expertise on Machine with Mayank podcast
+                Share your expertise on Curious with Mayank podcast
               </p>
               <Link 
                 href="/podcast" 

@@ -113,22 +113,6 @@ export default function Home() {
                 <strong>Curious with Mayank</strong> podcast. Mayank is also a certified Sales trainer 
                 and drone pilot who loves tinkering with technology, psychology, branding, marketing, and sales.
               </p>
-              <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-500 dark:text-gray-400">
-                <div>
-                  <div className="font-medium text-gray-900 dark:text-white mb-2">Services:</div>
-                  <div>• Brand Strategy & Psychology</div>
-                  <div>• Sales Training</div>
-                  <div>• Marketing Training</div>
-                  <div>• Business Automation</div>
-                </div>
-                <div>
-                  <div className="font-medium text-gray-900 dark:text-white mb-2">Focus Areas:</div>
-                  <div>• SMEs & Startups</div>
-                  <div>• Manufacturing Sector</div>
-                  <div>• Core Problem Solving</div>
-                  <div>• Growth Strategies</div>
-                </div>
-              </div>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-8 rounded-xl">
               <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
