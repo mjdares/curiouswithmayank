@@ -156,7 +156,7 @@ export default function ContactPage() {
                   Distk.in
                 </a>
                 <span className="text-gray-400">•</span>
-                <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">
+                <a href="https://www.linkedin.com/company/distk-technologies/" className="text-blue-600 dark:text-blue-400 hover:underline">
                   LinkedIn
                 </a>
                 <span className="text-gray-400">•</span>

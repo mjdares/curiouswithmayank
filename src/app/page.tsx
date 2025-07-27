@@ -99,7 +99,7 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="px-6 py-16">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="max-w-4xl mx-auto text-center">
             <div>
               <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                 Meet Mayank Jain
@@ -108,26 +108,6 @@ export default function Home() {
                 Computer Engineer and Entrepreneur with 14+ years of experience working at the intersection of 
                 Sales, Marketing, and Technology.
               </p>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Founder of <strong>Distk.in</strong> and <strong>Dares.co.in</strong>, and host of 
-                <strong>Curious with Mayank</strong> podcast. Mayank is also a certified Sales trainer 
-                and drone pilot who loves tinkering with technology, psychology, branding, marketing, and sales.
-              </p>
-            </div>
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-8 rounded-xl">
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                Distk.in Services
-              </h4>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Through Distk.in, we create advertisements that truly resonate with your brand&apos;s audience, 
-                combining psychology-driven insights with strategic messaging.
-              </p>
-              <div className="space-y-2 text-sm text-blue-600 dark:text-blue-400">
-                <div>• Audience-Resonant Advertising</div>
-                <div>• Psychology-Driven Campaigns</div>
-                <div>• Brand Messaging Strategy</div>
-                <div>• SME-Focused Solutions</div>
-              </div>
             </div>
           </div>
         </div>
