@@ -105,8 +105,9 @@ export default function Home() {
                 Meet Mayank Jain
               </h3>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-                Computer Engineer and Entrepreneur with 14+ years of experience working at the intersection of 
-                Sales, Marketing, and Technology.
+                A self-learner who was formally trained in computer engineering but found his true passion in 
+                entrepreneurship. With 14+ years of experience, Mayank currently works at the fascinating 
+                intersection of sales, marketing, and technology.
               </p>
             </div>
           </div>

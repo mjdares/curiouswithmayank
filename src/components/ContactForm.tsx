@@ -217,10 +217,11 @@ export default function ContactForm({ type }: ContactFormProps) {
                 className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
               >
                 <option value="">Select budget range</option>
-                <option value="10k">₹10,000 (Standard Rate)</option>
-                <option value="under-10k">Under ₹10,000</option>
+                <option value="10k">₹10,000</option>
                 <option value="10k-25k">₹10,000 - ₹25,000</option>
                 <option value="25k+">₹25,000+</option>
+                <option value="international">International Event</option>
+                <option value="discuss">Prefer to Discuss</option>
                 <option value="discuss">Prefer to discuss</option>
               </select>
             </div>

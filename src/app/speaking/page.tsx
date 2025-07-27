@@ -40,7 +40,7 @@ export default function SpeakingPage() {
           <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
             Speaking Topics
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-6 rounded-xl">
               <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                 Business Process Automation
@@ -97,7 +97,7 @@ export default function SpeakingPage() {
               </ul>
             </div>
             
-            <div className="bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 p-6 rounded-xl md:col-span-2 lg:col-span-1">
+            <div className="bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 p-6 rounded-xl">
               <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                 Sales & Marketing Training
               </h4>
@@ -109,6 +109,21 @@ export default function SpeakingPage() {
                 <li>• Marketing Strategy for SMEs</li>
                 <li>• Customer Psychology Training</li>
                 <li>• Growth-Focused Methodologies</li>
+              </ul>
+            </div>
+            
+            <div className="bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 p-6 rounded-xl">
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                Startup Growth Strategies
+              </h4>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Practical growth frameworks for early-stage and scaling companies
+              </p>
+              <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-1">
+                <li>• Product-Market Fit Strategies</li>
+                <li>• Scaling Operations</li>
+                <li>• Customer Acquisition</li>
+                <li>• Revenue Optimization</li>
               </ul>
             </div>
           </div>
