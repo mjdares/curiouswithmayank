@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-blue-900">
@@ -9,10 +11,10 @@ export default function Home() {
           </h1>
           <div className="hidden md:flex space-x-8">
             <a href="#about" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">About</a>
-            <a href="/speaking" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Speaking</a>
-            <a href="/podcast" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Podcast</a>
+            <Link href="/speaking" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Speaking</Link>
+            <Link href="/podcast" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Podcast</Link>
             <a href="#insights" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Insights</a>
-            <a href="/contact" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contact</a>
+            <Link href="/contact" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contact</Link>
           </div>
         </div>
       </nav>
@@ -29,18 +31,18 @@ export default function Home() {
             intelligent automation and strategic insights.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
+            <Link 
               href="/speaking" 
               className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
             >
               Book Speaking Engagement
-            </a>
-            <a 
+            </Link>
+            <Link 
               href="/podcast" 
               className="px-8 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors font-medium"
             >
               Listen to Podcast
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -60,9 +62,9 @@ export default function Home() {
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Latest episode: AI Automation Strategies for Modern Businesses
               </p>
-              <a href="/podcast" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">
+              <Link href="/podcast" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">
                 Listen Now →
-              </a>
+              </Link>
             </div>
             
             {/* Speaking Card */}
@@ -73,9 +75,9 @@ export default function Home() {
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Business Automation • Digital Transformation • Growth Strategies
               </p>
-              <a href="/speaking" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">
+              <Link href="/speaking" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">
                 Book Session →
-              </a>
+              </Link>
             </div>
             
             {/* Insights Card */}
@@ -101,14 +103,14 @@ export default function Home() {
             Ready to Transform Your Business?
           </h3>
           <p className="text-blue-100 mb-8 text-lg">
-            Let's discuss how automation can accelerate your growth and streamline your operations.
+            Let&apos;s discuss how automation can accelerate your growth and streamline your operations.
           </p>
-          <a 
+          <Link 
             href="/contact" 
             className="px-8 py-3 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-medium"
           >
             Get In Touch
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -120,12 +122,12 @@ export default function Home() {
             <a href="https://distk.in" className="hover:text-white transition-colors">
               Distk.in
             </a>
-            <a href="/podcast" className="hover:text-white transition-colors">
+            <Link href="/podcast" className="hover:text-white transition-colors">
               Podcast
-            </a>
-            <a href="/speaking" className="hover:text-white transition-colors">
+            </Link>
+            <Link href="/speaking" className="hover:text-white transition-colors">
               Speaking
-            </a>
+            </Link>
           </div>
         </div>
       </footer>

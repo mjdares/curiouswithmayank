@@ -1,4 +1,5 @@
 import ContactForm from '@/components/ContactForm';
+import Link from 'next/link';
 
 export default function PodcastPage() {
   return (
@@ -7,14 +8,14 @@ export default function PodcastPage() {
       <nav className="px-6 py-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-            <a href="/">Curious with Mayank</a>
+            <Link href="/">Curious with Mayank</Link>
           </h1>
           <div className="hidden md:flex space-x-8">
-            <a href="/#about" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">About</a>
-            <a href="/speaking" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Speaking</a>
-            <a href="/podcast" className="text-blue-600 dark:text-blue-400 font-medium">Podcast</a>
-            <a href="/#insights" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Insights</a>
-            <a href="/contact" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contact</a>
+            <Link href="/#about" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">About</Link>
+            <Link href="/speaking" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Speaking</Link>
+            <Link href="/podcast" className="text-blue-600 dark:text-blue-400 font-medium">Podcast</Link>
+            <Link href="/#insights" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Insights</Link>
+            <Link href="/contact" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contact</Link>
           </div>
         </div>
       </nav>

@@ -1,4 +1,5 @@
 import ContactForm from '@/components/ContactForm';
+import Link from 'next/link';
 
 export default function ContactPage() {
   return (
@@ -7,14 +8,14 @@ export default function ContactPage() {
       <nav className="px-6 py-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-            <a href="/">Curious with Mayank</a>
+            <Link href="/">Curious with Mayank</Link>
           </h1>
           <div className="hidden md:flex space-x-8">
-            <a href="/#about" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">About</a>
-            <a href="/speaking" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Speaking</a>
-            <a href="/podcast" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Podcast</a>
-            <a href="/#insights" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Insights</a>
-            <a href="/contact" className="text-blue-600 dark:text-blue-400 font-medium">Contact</a>
+            <Link href="/#about" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">About</Link>
+            <Link href="/speaking" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Speaking</Link>
+            <Link href="/podcast" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Podcast</Link>
+            <Link href="/#insights" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Insights</Link>
+            <Link href="/contact" className="text-blue-600 dark:text-blue-400 font-medium">Contact</Link>
           </div>
         </div>
       </nav>
@@ -28,7 +29,7 @@ export default function ContactPage() {
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Ready to transform your business with automation? Looking for an expert speaker? 
-              Want to be featured on the podcast? Let's discuss how we can work together.
+              Want to be featured on the podcast? Let&apos;s discuss how we can work together.
             </p>
           </div>
 
@@ -46,12 +47,12 @@ export default function ContactPage() {
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Book Mayank for conferences, workshops, and corporate events
               </p>
-              <a 
+              <Link 
                 href="/speaking" 
                 className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Book Now
-              </a>
+              </Link>
             </div>
 
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
@@ -66,12 +67,12 @@ export default function ContactPage() {
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Share your expertise on Machine with Mayank podcast
               </p>
-              <a 
+              <Link 
                 href="/podcast" 
                 className="inline-block bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors"
               >
                 Apply
-              </a>
+              </Link>
             </div>
 
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
