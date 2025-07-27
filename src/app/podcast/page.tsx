@@ -24,12 +24,12 @@ export default function PodcastPage() {
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-            Machine with
+            Curious with
             <span className="text-purple-600 dark:text-purple-400"> Mayank</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-            Exploring the intersection of technology, business, and human potential. 
-            Real conversations with innovators, entrepreneurs, and thought leaders.
+            Deep dives into brand building, consumer psychology, marketing strategies, and everything 
+            that makes brands memorable. Real conversations with brand builders and marketing innovators.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -125,8 +125,45 @@ export default function PodcastPage() {
       <section className="px-6 py-16">
         <div className="max-w-7xl mx-auto">
           <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            What We Talk About
+            Our Podcast Shows
           </h3>
+          
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div className="bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 p-8 rounded-xl">
+              <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Curious with Mayank
+              </h4>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Bringing untold stories of Indian SMEs, startups, and core manufacturing sectors. Discover how they solve real problems for end consumers, the challenges they face, and innovative solutions that drive growth.
+              </p>
+              <div className="text-sm text-purple-600 dark:text-purple-400 space-y-1">
+                <div>• Indian SME & Startup Success Stories</div>
+                <div>• Manufacturing Sector Innovations</div>
+                <div>• Problem-Solving Case Studies</div>
+                <div>• Brand Building & Consumer Psychology</div>
+                <div>• Marketing Strategies for Growth</div>
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-br from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20 p-8 rounded-xl">
+              <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Machine with Mayank
+              </h4>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Technology discussions, training sessions, and practical insights on automation, AI, and digital transformation.
+              </p>
+              <div className="text-sm text-blue-600 dark:text-blue-400 space-y-1">
+                <div>• Technology Training Sessions</div>
+                <div>• Automation Implementation</div>
+                <div>• AI Integration Strategies</div>
+                <div>• Digital Transformation</div>
+              </div>
+            </div>
+          </div>
+          
+          <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+            Core Topics We Cover
+          </h4>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -144,8 +181,8 @@ export default function PodcastPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m8 0a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2h8z" />
                 </svg>
               </div>
-              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Business</h4>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">Strategy, growth, and operational excellence</p>
+              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Branding</h4>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">Brand psychology, positioning, and marketing strategy</p>
             </div>
 
             <div className="text-center">
@@ -176,10 +213,11 @@ export default function PodcastPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Be a Guest on Machine with Mayank
+              Be a Guest on Our Podcasts
             </h3>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Share your expertise and story with our audience of entrepreneurs, technologists, and business leaders.
+              Share your expertise on Curious with Mayank (branding/marketing) or Machine with Mayank (technology/automation) 
+              with our audience of entrepreneurs, SMEs, and business leaders.
             </p>
           </div>
 

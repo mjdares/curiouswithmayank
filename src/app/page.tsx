@@ -23,12 +23,12 @@ export default function Home() {
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
-            Automating Business,
-            <span className="text-blue-600 dark:text-blue-400"> Amplifying Growth</span>
+            Building Brands,
+            <span className="text-blue-600 dark:text-blue-400"> Automating Growth</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-            Speaker, Podcaster & Automation Expert helping brands unlock their potential through 
-            intelligent automation and strategic insights.
+            Speaker, Podcaster & Brand Strategist helping SMEs and startups solve core problems through 
+            intelligent branding, automation, and strategic insights.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
@@ -57,10 +57,10 @@ export default function Home() {
             {/* Podcast Card */}
             <div className="bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 p-6 rounded-xl">
               <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                Machine with Mayank
+                Curious with Mayank
               </h4>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Latest episode: AI Automation Strategies for Modern Businesses
+                Brand building, psychology, and marketing strategies for SMEs and startups
               </p>
               <Link href="/podcast" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">
                 Listen Now →
@@ -73,7 +73,7 @@ export default function Home() {
                 Speaking Topics
               </h4>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Business Automation • Digital Transformation • Growth Strategies
+                Brand Strategy • Business Automation • SME Growth • Startup Scaling
               </p>
               <Link href="/speaking" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">
                 Book Session →
@@ -86,11 +86,64 @@ export default function Home() {
                 Business Insights
               </h4>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Strategic insights on automation, growth, and digital innovation
+                Strategic insights on branding, automation, and business growth for entrepreneurs
               </p>
               <a href="#insights" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">
                 Read More →
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="px-6 py-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                Meet Mayank Jain
+              </h3>
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
+                Computer Engineer and Entrepreneur with 14+ years of experience working at the intersection of 
+                Sales, Marketing, and Technology.
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Founder of <strong>Distk.in</strong> and <strong>Dares.co.in</strong>, and host of 
+                <strong>Curious with Mayank</strong> podcast. Mayank is also a certified Sales trainer 
+                and drone pilot who loves tinkering with technology, psychology, branding, marketing, and sales.
+              </p>
+              <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-500 dark:text-gray-400">
+                <div>
+                  <div className="font-medium text-gray-900 dark:text-white mb-2">Services:</div>
+                  <div>• Brand Strategy & Psychology</div>
+                  <div>• Sales Training</div>
+                  <div>• Marketing Training</div>
+                  <div>• Business Automation</div>
+                </div>
+                <div>
+                  <div className="font-medium text-gray-900 dark:text-white mb-2">Focus Areas:</div>
+                  <div>• SMEs & Startups</div>
+                  <div>• Manufacturing Sector</div>
+                  <div>• Core Problem Solving</div>
+                  <div>• Growth Strategies</div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-8 rounded-xl">
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                Distk.in Services
+              </h4>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Through Distk.in, we create advertisements that truly resonate with your brand&apos;s audience, 
+                combining psychology-driven insights with strategic messaging.
+              </p>
+              <div className="space-y-2 text-sm text-blue-600 dark:text-blue-400">
+                <div>• Audience-Resonant Advertising</div>
+                <div>• Psychology-Driven Campaigns</div>
+                <div>• Brand Messaging Strategy</div>
+                <div>• SME-Focused Solutions</div>
+              </div>
             </div>
           </div>
         </div>
@@ -103,7 +156,7 @@ export default function Home() {
             Ready to Transform Your Business?
           </h3>
           <p className="text-blue-100 mb-8 text-lg">
-            Let&apos;s discuss how automation can accelerate your growth and streamline your operations.
+            Let&apos;s discuss how branding, automation, and strategic training can accelerate your growth.
           </p>
           <Link 
             href="/contact" 

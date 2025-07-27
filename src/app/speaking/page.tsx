@@ -28,8 +28,8 @@ export default function SpeakingPage() {
             <span className="text-blue-600 dark:text-blue-400"> Expert Insights</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-            Mayank brings real-world automation expertise and engaging storytelling to conferences, 
-            workshops, and corporate events worldwide.
+            Mayank brings expertise in automation, branding, and business strategy to SMEs, startups, 
+            and entrepreneurs solving core problems at conferences and corporate events worldwide.
           </p>
         </div>
       </section>
@@ -40,7 +40,7 @@ export default function SpeakingPage() {
           <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
             Speaking Topics
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-6 rounded-xl">
               <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                 Business Process Automation
@@ -80,6 +80,35 @@ export default function SpeakingPage() {
                 <li>• Digital Strategy Development</li>
                 <li>• Technology Adoption Frameworks</li>
                 <li>• Cultural Transformation</li>
+              </ul>
+            </div>
+
+            <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 p-6 rounded-xl">
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                Brand Building & Strategy
+              </h4>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Psychology-driven branding and marketing for SMEs and startups
+              </p>
+              <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-1">
+                <li>• Brand Psychology & Positioning</li>
+                <li>• Marketing Strategy for Startups</li>
+                <li>• Customer Psychology & Behavior</li>
+              </ul>
+            </div>
+            
+            <div className="bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 p-6 rounded-xl md:col-span-2 lg:col-span-1">
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                Sales & Marketing Training
+              </h4>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Comprehensive training programs for growing startups and SMEs
+              </p>
+              <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-1">
+                <li>• Sales Process Optimization</li>
+                <li>• Marketing Strategy for SMEs</li>
+                <li>• Customer Psychology Training</li>
+                <li>• Growth-Focused Methodologies</li>
               </ul>
             </div>
           </div>
