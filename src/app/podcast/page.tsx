@@ -29,7 +29,7 @@ export default function PodcastPage() {
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
             Deep dives into brand building, consumer psychology, marketing strategies, and everything 
-            that makes brands memorable. Real conversations with brand builders and marketing innovators.
+            that makes brands memorable. Real conversations with problem solvers and innovative entrepreneurs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
