@@ -25,12 +25,12 @@ export default function Home() {
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
-            Building Brands,
-            <span className="text-blue-600 dark:text-blue-400"> Automating Growth</span>
+            Learning About Brands,
+            <span className="text-blue-600 dark:text-blue-400"> Sharing Growth Stories</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-            Speaker, Podcaster & Brand Strategist helping SMEs and startups solve core problems through 
-            intelligent branding, automation, and strategic insights.
+            Sharing experiences in branding, automation, and business growth through speaking, podcasting, 
+            and conversations with fellow entrepreneurs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
@@ -64,7 +64,7 @@ export default function Home() {
                 Curious with Mayank
               </h4>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Brand building, psychology, and marketing strategies for SMEs and startups
+                Conversations about brand building, psychology, and marketing with fellow entrepreneurs
               </p>
               <a href="https://www.instagram.com/curiouswithmayank/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">
                 Watch on Instagram →
@@ -90,7 +90,7 @@ export default function Home() {
                 Business Insights
               </h4>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Strategic insights on branding, automation, and business growth for entrepreneurs
+                Sharing learnings about branding, automation, and business growth with fellow entrepreneurs
               </p>
               <a href="#insights" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">
                 Read More →
@@ -130,10 +130,10 @@ export default function Home() {
       <section className="px-6 py-16 bg-blue-600 dark:bg-blue-800">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-3xl font-bold text-white mb-4">
-            Ready to Transform Your Business?
+            Let&apos;s Connect and Learn Together
           </h3>
           <p className="text-blue-100 mb-8 text-lg">
-            Let&apos;s discuss how branding, automation, and strategic training can accelerate your growth.
+            Interested in discussing branding, automation, or business growth? I&apos;d love to hear about your journey.
           </p>
           <Link 
             href="/contact" 
@@ -151,7 +151,7 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-bold text-white mb-4">Curious with Mayank</h3>
               <p className="text-gray-400 mb-4">
-                Speaker, Podcaster & Brand Strategist helping SMEs and startups solve core problems through intelligent branding, automation, and strategic insights.
+                Sharing experiences in branding, automation, and business growth through speaking, podcasting, and conversations with fellow entrepreneurs.
               </p>
             </div>
             <div>

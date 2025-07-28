@@ -30,8 +30,8 @@ export default function PodcastPage() {
             <span className="text-purple-600 dark:text-purple-400"> Mayank</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-            Deep dives into brand building, consumer psychology, marketing strategies, and everything 
-            that makes brands memorable. Real conversations with problem solvers and innovative entrepreneurs.
+            Conversations about brand building, consumer psychology, and marketing with fellow entrepreneurs. 
+            Learning together through shared experiences and stories.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -225,11 +225,11 @@ export default function PodcastPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Be a Guest on Our Podcasts
+              Join Our Podcast Conversation
             </h3>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Share your expertise on Curious with Mayank (branding/marketing) or Machine with Mayank (technology/automation) 
-              with our audience of entrepreneurs, SMEs, and business leaders.
+              Have an interesting story or experience to share? I&apos;d love to have a conversation on Curious with Mayank 
+              or Machine with Mayank and learn from your journey.
             </p>
           </div>
 
@@ -325,7 +325,7 @@ export default function PodcastPage() {
             <div>
               <h3 className="text-xl font-bold text-white mb-4">Curious with Mayank</h3>
               <p className="text-gray-400 mb-4">
-                Deep dives into brand building, consumer psychology, and marketing strategies with problem solvers and innovative entrepreneurs.
+                Conversations about brand building, consumer psychology, and marketing with fellow entrepreneurs and learners.
               </p>
             </div>
             <div>

@@ -26,3 +26,73 @@
  GET /contact/ 200 in 261ms
  ✓ Compiled /contact in 22ms
  GET /contact/ 200 in 243ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/mayank/curiouswithmayank/.next/server/app/contact/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/mayank/curiouswithmayank/.next/server/app/contact/page/app-build-manifest.json'
+}
+ ✓ Compiled in 68ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1342ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/mayank/curiouswithmayank/.next/static/development/_buildManifest.js.tmp.j2gtp2jzkoo'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/mayank/curiouswithmayank/.next/static/development/_buildManifest.js.tmp.j2gtp2jzkoo'
+}
+[Error: ENOENT: no such file or directory, open '/home/mayank/curiouswithmayank/.next/server/app/contact/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/mayank/curiouswithmayank/.next/server/app/contact/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/mayank/curiouswithmayank/.next/static/development/_buildManifest.js.tmp.ftfotbphfos'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/mayank/curiouswithmayank/.next/static/development/_buildManifest.js.tmp.ftfotbphfos'
+}
+[Error: ENOENT: no such file or directory, open '/home/mayank/curiouswithmayank/.next/static/development/_buildManifest.js.tmp.s4gsc48a8g'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/mayank/curiouswithmayank/.next/static/development/_buildManifest.js.tmp.s4gsc48a8g'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/mayank/curiouswithmayank/.next/server/app/contact/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/mayank/curiouswithmayank/.next/server/app/contact/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/mayank/curiouswithmayank/.next/static/development/_buildManifest.js.tmp.6vlsrb24ys6'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/mayank/curiouswithmayank/.next/static/development/_buildManifest.js.tmp.6vlsrb24ys6'
+}
+[Error: ENOENT: no such file or directory, open '/home/mayank/curiouswithmayank/.next/server/app/contact/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/mayank/curiouswithmayank/.next/server/app/contact/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/mayank/curiouswithmayank/.next/static/development/_buildManifest.js.tmp.w0mdp7dvigs'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/mayank/curiouswithmayank/.next/static/development/_buildManifest.js.tmp.w0mdp7dvigs'
+}
+[Error: ENOENT: no such file or directory, open '/home/mayank/curiouswithmayank/.next/static/development/_buildManifest.js.tmp.gzu7dbwjlif'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/mayank/curiouswithmayank/.next/static/development/_buildManifest.js.tmp.gzu7dbwjlif'
+}
+ ✓ Compiled in 75ms
+ ✓ Compiled in 86ms
+ ✓ Compiled in 90ms
+ ✓ Compiled in 41ms
+ ✓ Compiled in 46ms
+ ✓ Compiled in 97ms
+ ✓ Compiled in 38ms

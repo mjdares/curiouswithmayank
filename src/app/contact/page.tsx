@@ -30,8 +30,8 @@ export default function ContactPage() {
               Let&apos;s Connect
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Ready to transform your business with automation? Looking for an expert speaker? 
-              Want to be featured on the podcast? Let&apos;s discuss how we can work together.
+              Interested in discussing automation, branding, or business growth? Want to share your story 
+              on the podcast? Let&apos;s connect and learn from each other.
             </p>
           </div>
 
@@ -190,7 +190,7 @@ export default function ContactPage() {
             <div>
               <h3 className="text-xl font-bold text-white mb-4">Curious with Mayank</h3>
               <p className="text-gray-400 mb-4">
-                Ready to transform your business with automation, strategic branding, and expert guidance for sustainable growth.
+                Learning and sharing about automation, branding, and business growth with fellow entrepreneurs.
               </p>
             </div>
             <div>

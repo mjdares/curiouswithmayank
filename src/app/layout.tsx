@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Curious with Mayank - Speaker, Podcaster & Brand Strategist",
-  description: "Speaker, Podcaster & Brand Strategist helping SMEs and startups solve core problems through intelligent branding, automation, and strategic insights.",
+  description: "Sharing experiences in branding, automation, and business growth through speaking, podcasting, and conversations with fellow entrepreneurs.",
   keywords: "Mayank Jain, speaker, podcaster, brand strategist, SME, startup, automation, branding, marketing, curious with mayank, machine with mayank",
   authors: [{ name: "Mayank Jain" }],
   creator: "Mayank Jain",
   openGraph: {
     title: "Curious with Mayank - Speaker, Podcaster & Brand Strategist",
-    description: "Speaker, Podcaster & Brand Strategist helping SMEs and startups solve core problems through intelligent branding, automation, and strategic insights.",
+    description: "Sharing experiences in branding, automation, and business growth through speaking, podcasting, and conversations with fellow entrepreneurs.",
     url: "https://curiouswithmayank.com",
     siteName: "Curious with Mayank",
     type: "website",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Curious with Mayank - Speaker, Podcaster & Brand Strategist",
-    description: "Speaker, Podcaster & Brand Strategist helping SMEs and startups solve core problems through intelligent branding, automation, and strategic insights.",
+    description: "Sharing experiences in branding, automation, and business growth through speaking, podcasting, and conversations with fellow entrepreneurs.",
   },
   icons: {
     icon: [

@@ -26,12 +26,12 @@ export default function SpeakingPage() {
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-            Transform Your Event with
-            <span className="text-blue-600 dark:text-blue-400"> Expert Insights</span>
+            Let&apos;s Share Experiences at
+            <span className="text-blue-600 dark:text-blue-400"> Your Event</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-            Mayank brings expertise in automation, branding, and business strategy to SMEs, startups, 
-            and entrepreneurs solving core problems at conferences and corporate events worldwide.
+            I enjoy sharing learnings from my journey in automation, branding, and business growth 
+            with fellow entrepreneurs and teams at conferences and events.
           </p>
         </div>
       </section>
@@ -145,10 +145,10 @@ export default function SpeakingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Book Mayank for Your Event
+              Let&apos;s Connect About Your Event
             </h3>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Fill out the form below and let&apos;s discuss how we can make your event memorable.
+              Interested in having me share some experiences at your event? Let&apos;s discuss what might work.
             </p>
           </div>
           <ContactForm type="speaking" />
@@ -162,7 +162,7 @@ export default function SpeakingPage() {
             <div>
               <h3 className="text-xl font-bold text-white mb-4">Curious with Mayank</h3>
               <p className="text-gray-400 mb-4">
-                Transform your event with expert insights on automation, branding, and business strategy for SMEs, startups, and entrepreneurs.
+                Sharing experiences and learnings about automation, branding, and business growth with fellow entrepreneurs and teams.
               </p>
             </div>
             <div>
