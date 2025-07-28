@@ -14,7 +14,7 @@ export default function ContactPage() {
           </h1>
           <div className="hidden md:flex space-x-8">
             <Link href="/#about" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">About</Link>
-            <Link href="/speaking" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Speaking</Link>
+            <Link href="/training" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Training</Link>
             <Link href="/podcast" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Podcast</Link>
             <Link href="/#insights" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Insights</Link>
             <Link href="/contact" className="text-blue-600 dark:text-blue-400 font-medium">Contact</Link>
@@ -44,13 +44,13 @@ export default function ContactPage() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Speaking Engagements
+                Training Sessions
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Book Mayank for conferences, workshops, and corporate events
+                Book Mayank for workshops, training programs, and corporate sessions
               </p>
               <Link 
-                href="/speaking" 
+                href="/training" 
                 className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Book Now

@@ -13,7 +13,7 @@ export default function Home() {
           </h1>
           <div className="hidden md:flex space-x-8">
             <a href="#about" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">About</a>
-            <Link href="/speaking" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Speaking</Link>
+            <Link href="/training" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Training</Link>
             <Link href="/podcast" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Podcast</Link>
             <a href="#insights" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Insights</a>
             <Link href="/contact" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contact</Link>
@@ -34,10 +34,10 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
-              href="/speaking" 
+              href="/training" 
               className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
             >
-              Book Speaking Engagement
+              Book Training Session
             </Link>
             <a 
               href="https://www.instagram.com/curiouswithmayank/" 
@@ -71,15 +71,15 @@ export default function Home() {
               </a>
             </div>
             
-            {/* Speaking Card */}
+            {/* Training Card */}
             <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-6 rounded-xl">
               <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                Speaking Topics
+                Training Topics
               </h4>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Brand Strategy • Business Automation • SME Growth • Startup Scaling
               </p>
-              <Link href="/speaking" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">
+              <Link href="/training" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">
                 Book Session →
               </Link>
             </div>
@@ -172,8 +172,8 @@ export default function Home() {
                 <Link href="/podcast" className="hover:text-white transition-colors">
                   Podcast
                 </Link>
-                <Link href="/speaking" className="hover:text-white transition-colors">
-                  Speaking
+                <Link href="/training" className="hover:text-white transition-colors">
+                  Training
                 </Link>
               </div>
             </div>

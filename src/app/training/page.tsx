@@ -3,7 +3,7 @@ import Link from 'next/link';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import SocialFollow from '@/components/SocialFollow';
 
-export default function SpeakingPage() {
+export default function TrainingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-blue-900">
       {/* Navigation */}
@@ -14,7 +14,7 @@ export default function SpeakingPage() {
           </h1>
           <div className="hidden md:flex space-x-8">
             <Link href="/#about" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">About</Link>
-            <Link href="/speaking" className="text-blue-600 dark:text-blue-400 font-medium">Speaking</Link>
+            <Link href="/training" className="text-blue-600 dark:text-blue-400 font-medium">Training</Link>
             <Link href="/podcast" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Podcast</Link>
             <Link href="/#insights" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Insights</Link>
             <Link href="/contact" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contact</Link>
@@ -36,11 +36,11 @@ export default function SpeakingPage() {
         </div>
       </section>
 
-      {/* Speaking Topics */}
+      {/* Training Topics */}
       <section className="px-6 py-16 bg-white dark:bg-gray-800">
         <div className="max-w-7xl mx-auto">
           <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Speaking Topics
+            Training Topics
           </h3>
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-6 rounded-xl">
@@ -151,7 +151,7 @@ export default function SpeakingPage() {
               Interested in having me share some experiences at your event? Let&apos;s discuss what might work.
             </p>
           </div>
-          <ContactForm type="speaking" />
+          <ContactForm type="training" />
         </div>
       </section>
 

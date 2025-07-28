@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 interface ContactFormProps {
-  type: 'speaking' | 'podcast' | 'general';
+  type: 'training' | 'podcast' | 'general';
 }
 
 export default function ContactForm({ type }: ContactFormProps) {
@@ -12,7 +12,7 @@ export default function ContactForm({ type }: ContactFormProps) {
     email: '',
     company: '',
     message: '',
-    // Speaking specific
+    // Training specific
     eventDate: '',
     audience: '',
     budget: '',
@@ -70,8 +70,8 @@ export default function ContactForm({ type }: ContactFormProps) {
 
   const getFormTitle = () => {
     switch (type) {
-      case 'speaking':
-        return 'Book a Speaking Engagement';
+      case 'training':
+        return 'Book a Training Session';
       case 'podcast':
         return 'Be a Podcast Guest';
       case 'general':
@@ -144,8 +144,8 @@ export default function ContactForm({ type }: ContactFormProps) {
           />
         </div>
 
-        {/* Speaking Specific Fields */}
-        {type === 'speaking' && (
+        {/* Training Specific Fields */}
+        {type === 'training' && (
           <>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -183,7 +183,7 @@ export default function ContactForm({ type }: ContactFormProps) {
 
             <div>
               <label htmlFor="topic" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Preferred Speaking Topic
+                Preferred Training Topic
               </label>
               <select
                 id="topic"
@@ -274,7 +274,7 @@ export default function ContactForm({ type }: ContactFormProps) {
         {/* Message */}
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-            {type === 'speaking' ? 'Event Details & Requirements' : 
+            {type === 'training' ? 'Event Details & Requirements' : 
              type === 'podcast' ? 'Tell us more about yourself and your story' : 
              'Your Message'} *
           </label>
@@ -286,7 +286,7 @@ export default function ContactForm({ type }: ContactFormProps) {
             value={formData.message}
             onChange={handleChange}
             placeholder={
-              type === 'speaking' ? 'Please describe your event, venue, target audience, and any specific requirements...' :
+              type === 'training' ? 'Please describe your event, venue, target audience, and any specific requirements...' :
               type === 'podcast' ? 'Share your background, achievements, and what unique insights you can bring to our audience...' :
               'How can Mayank help you?'
             }
@@ -299,7 +299,7 @@ export default function ContactForm({ type }: ContactFormProps) {
           type="submit"
           className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors font-medium"
         >
-          {type === 'speaking' ? 'Request Speaking Engagement' :
+          {type === 'training' ? 'Request Training Session' :
            type === 'podcast' ? 'Submit Guest Application' :
            'Send Message'}
         </button>
