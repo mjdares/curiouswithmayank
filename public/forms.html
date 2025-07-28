@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netlify Forms</title>
+</head>
+<body>
+    <!-- Hidden forms for Netlify to detect -->
+    
+    <!-- Contact Form - General -->
+    <form name="contact-general" netlify netlify-honeypot="bot-field" hidden>
+        <input type="hidden" name="form-name" value="contact-general" />
+        <input type="hidden" name="bot-field" />
+        <input name="name" type="text" />
+        <input name="email" type="email" />
+        <input name="company" type="text" />
+        <textarea name="message"></textarea>
+    </form>
+    
+    <!-- Contact Form - Speaking -->
+    <form name="contact-speaking" netlify netlify-honeypot="bot-field" hidden>
+        <input type="hidden" name="form-name" value="contact-speaking" />
+        <input type="hidden" name="bot-field" />
+        <input name="name" type="text" />
+        <input name="email" type="email" />
+        <input name="company" type="text" />
+        <input name="eventDate" type="date" />
+        <input name="audience" type="text" />
+        <input name="budget" type="text" />
+        <input name="topic" type="text" />
+        <textarea name="message"></textarea>
+    </form>
+    
+    <!-- Contact Form - Podcast -->
+    <form name="contact-podcast" netlify netlify-honeypot="bot-field" hidden>
+        <input type="hidden" name="form-name" value="contact-podcast" />
+        <input type="hidden" name="bot-field" />
+        <input name="name" type="text" />
+        <input name="email" type="email" />
+        <input name="company" type="text" />
+        <input name="guestTopic" type="text" />
+        <input name="expertise" type="text" />
+        <input name="website" type="url" />
+        <textarea name="message"></textarea>
+    </form>
+</body>
+</html>

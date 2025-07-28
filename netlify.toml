@@ -9,3 +9,9 @@
 
 [build.environment]
   NODE_VERSION = "18"
+
+# Form processing
+[forms]
+  [forms.contact-general]
+  [forms.contact-speaking]  
+  [forms.contact-podcast]
