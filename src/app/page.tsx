@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import NewsletterSignup from '@/components/NewsletterSignup';
+import SocialFollow from '@/components/SocialFollow';
 
 export default function Home() {
   return (
@@ -37,12 +39,14 @@ export default function Home() {
             >
               Book Speaking Engagement
             </Link>
-            <Link 
-              href="/podcast" 
+            <a 
+              href="https://www.instagram.com/curiouswithmayank/" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="px-8 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors font-medium"
             >
-              Listen to Podcast
-            </Link>
+              Watch Content on Instagram
+            </a>
           </div>
         </div>
       </section>
@@ -62,9 +66,9 @@ export default function Home() {
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Brand building, psychology, and marketing strategies for SMEs and startups
               </p>
-              <Link href="/podcast" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">
-                Listen Now →
-              </Link>
+              <a href="https://www.instagram.com/curiouswithmayank/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">
+                Watch on Instagram →
+              </a>
             </div>
             
             {/* Speaking Card */}
@@ -114,6 +118,14 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Social Follow */}
+      <SocialFollow className="bg-white dark:bg-gray-800" />
+
+      {/* Newsletter Signup */}
+      <section className="px-6 py-16 bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20">
+        <NewsletterSignup />
+      </section>
+
       {/* CTA Section */}
       <section className="px-6 py-16 bg-blue-600 dark:bg-blue-800">
         <div className="max-w-4xl mx-auto text-center">
@@ -133,19 +145,38 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="px-6 py-8 bg-gray-900 text-gray-300">
-        <div className="max-w-7xl mx-auto text-center">
-          <p>&copy; 2025 Curious with Mayank. All rights reserved.</p>
-          <div className="mt-4 flex justify-center space-x-6">
-            <a href="https://distk.in" className="hover:text-white transition-colors">
-              Distk.in
-            </a>
-            <Link href="/podcast" className="hover:text-white transition-colors">
-              Podcast
-            </Link>
-            <Link href="/speaking" className="hover:text-white transition-colors">
-              Speaking
-            </Link>
+      <footer className="px-6 py-12 bg-gray-900 text-gray-300">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <h3 className="text-xl font-bold text-white mb-4">Curious with Mayank</h3>
+              <p className="text-gray-400 mb-4">
+                Speaker, Podcaster & Brand Strategist helping SMEs and startups solve core problems through intelligent branding, automation, and strategic insights.
+              </p>
+            </div>
+            <div>
+              <NewsletterSignup variant="footer" className="text-left" />
+            </div>
+          </div>
+          
+          <div className="border-t border-gray-800 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+              <p>&copy; 2025 Curious with Mayank. All rights reserved.</p>
+              <div className="flex space-x-6">
+                <a href="https://distk.in" className="hover:text-white transition-colors">
+                  Distk.in
+                </a>
+                <a href="https://youtube.com/@curiouswithmayank" className="hover:text-white transition-colors">
+                  YouTube
+                </a>
+                <Link href="/podcast" className="hover:text-white transition-colors">
+                  Podcast
+                </Link>
+                <Link href="/speaking" className="hover:text-white transition-colors">
+                  Speaking
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </footer>

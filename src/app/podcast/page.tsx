@@ -1,5 +1,7 @@
 import ContactForm from '@/components/ContactForm';
 import Link from 'next/link';
+import NewsletterSignup from '@/components/NewsletterSignup';
+import SocialFollow from '@/components/SocialFollow';
 
 export default function PodcastPage() {
   return (
@@ -67,8 +69,8 @@ export default function PodcastPage() {
               </p>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-500 dark:text-gray-400">45 min</span>
-                <a href="#" className="text-purple-600 dark:text-purple-400 font-medium hover:underline">
-                  Listen Now →
+                <a href="https://www.instagram.com/curiouswithmayank/" target="_blank" rel="noopener noreferrer" className="text-purple-600 dark:text-purple-400 font-medium hover:underline">
+                  Watch on Instagram →
                 </a>
               </div>
             </div>
@@ -85,8 +87,8 @@ export default function PodcastPage() {
               </p>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-500 dark:text-gray-400">52 min</span>
-                <a href="#" className="text-green-600 dark:text-green-400 font-medium hover:underline">
-                  Listen Now →
+                <a href="https://www.instagram.com/curiouswithmayank/" target="_blank" rel="noopener noreferrer" className="text-green-600 dark:text-green-400 font-medium hover:underline">
+                  Watch on Instagram →
                 </a>
               </div>
             </div>
@@ -103,8 +105,8 @@ export default function PodcastPage() {
               </p>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-500 dark:text-gray-400">38 min</span>
-                <a href="#" className="text-orange-600 dark:text-orange-400 font-medium hover:underline">
-                  Listen Now →
+                <a href="https://www.instagram.com/curiouswithmayank/" target="_blank" rel="noopener noreferrer" className="text-orange-600 dark:text-orange-400 font-medium hover:underline">
+                  Watch on Instagram →
                 </a>
               </div>
             </div>
@@ -112,10 +114,12 @@ export default function PodcastPage() {
 
           <div className="text-center mt-12">
             <a 
-              href="#" 
+              href="https://www.instagram.com/curiouswithmayank/" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="inline-block px-8 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors font-medium"
             >
-              View All Episodes
+              View All Content on Instagram
             </a>
           </div>
         </div>
@@ -206,6 +210,14 @@ export default function PodcastPage() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Social Follow */}
+      <SocialFollow variant="compact" className="bg-white dark:bg-gray-800" />
+
+      {/* Newsletter Signup */}
+      <section className="px-6 py-16 bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-purple-900/20 dark:to-indigo-900/20">
+        <NewsletterSignup variant="compact" />
       </section>
 
       {/* Guest Application */}
@@ -307,9 +319,23 @@ export default function PodcastPage() {
       </section>
 
       {/* Footer */}
-      <footer className="px-6 py-8 bg-gray-900 text-gray-300">
-        <div className="max-w-7xl mx-auto text-center">
-          <p>&copy; 2025 Curious with Mayank. All rights reserved.</p>
+      <footer className="px-6 py-12 bg-gray-900 text-gray-300">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <h3 className="text-xl font-bold text-white mb-4">Curious with Mayank</h3>
+              <p className="text-gray-400 mb-4">
+                Deep dives into brand building, consumer psychology, and marketing strategies with problem solvers and innovative entrepreneurs.
+              </p>
+            </div>
+            <div>
+              <NewsletterSignup variant="footer" className="text-left" />
+            </div>
+          </div>
+          
+          <div className="border-t border-gray-800 pt-8 text-center">
+            <p>&copy; 2025 Curious with Mayank. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>

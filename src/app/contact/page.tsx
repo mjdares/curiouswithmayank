@@ -1,5 +1,7 @@
 import ContactForm from '@/components/ContactForm';
 import Link from 'next/link';
+import NewsletterSignup from '@/components/NewsletterSignup';
+import SocialFollow from '@/components/SocialFollow';
 
 export default function ContactPage() {
   return (
@@ -123,6 +125,14 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Social Follow */}
+      <SocialFollow variant="compact" className="bg-white dark:bg-gray-800" />
+
+      {/* Newsletter Signup */}
+      <section className="px-6 py-16 bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20">
+        <NewsletterSignup variant="compact" />
+      </section>
+
       {/* Alternative Contact Methods */}
       <section className="px-6 py-16 bg-white dark:bg-gray-800">
         <div className="max-w-4xl mx-auto text-center">
@@ -156,6 +166,10 @@ export default function ContactPage() {
                   Distk.in
                 </a>
                 <span className="text-gray-400">•</span>
+                <a href="https://youtube.com/@curiouswithmayank" className="text-blue-600 dark:text-blue-400 hover:underline">
+                  YouTube
+                </a>
+                <span className="text-gray-400">•</span>
                 <a href="https://www.linkedin.com/company/distk-technologies/" className="text-blue-600 dark:text-blue-400 hover:underline">
                   LinkedIn
                 </a>
@@ -170,9 +184,23 @@ export default function ContactPage() {
       </section>
 
       {/* Footer */}
-      <footer className="px-6 py-8 bg-gray-900 text-gray-300">
-        <div className="max-w-7xl mx-auto text-center">
-          <p>&copy; 2025 Curious with Mayank. All rights reserved.</p>
+      <footer className="px-6 py-12 bg-gray-900 text-gray-300">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <h3 className="text-xl font-bold text-white mb-4">Curious with Mayank</h3>
+              <p className="text-gray-400 mb-4">
+                Ready to transform your business with automation, strategic branding, and expert guidance for sustainable growth.
+              </p>
+            </div>
+            <div>
+              <NewsletterSignup variant="footer" className="text-left" />
+            </div>
+          </div>
+          
+          <div className="border-t border-gray-800 pt-8 text-center">
+            <p>&copy; 2025 Curious with Mayank. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>

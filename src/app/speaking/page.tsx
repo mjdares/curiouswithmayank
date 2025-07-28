@@ -1,5 +1,7 @@
 import ContactForm from '@/components/ContactForm';
 import Link from 'next/link';
+import NewsletterSignup from '@/components/NewsletterSignup';
+import SocialFollow from '@/components/SocialFollow';
 
 export default function SpeakingPage() {
   return (
@@ -130,6 +132,14 @@ export default function SpeakingPage() {
         </div>
       </section>
 
+      {/* Social Follow */}
+      <SocialFollow variant="compact" className="bg-white dark:bg-gray-800" />
+
+      {/* Newsletter Signup */}
+      <section className="px-6 py-16 bg-gradient-to-br from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20">
+        <NewsletterSignup variant="compact" />
+      </section>
+
       {/* Booking Form */}
       <section className="px-6 py-16">
         <div className="max-w-7xl mx-auto">
@@ -146,9 +156,23 @@ export default function SpeakingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="px-6 py-8 bg-gray-900 text-gray-300">
-        <div className="max-w-7xl mx-auto text-center">
-          <p>&copy; 2025 Curious with Mayank. All rights reserved.</p>
+      <footer className="px-6 py-12 bg-gray-900 text-gray-300">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <h3 className="text-xl font-bold text-white mb-4">Curious with Mayank</h3>
+              <p className="text-gray-400 mb-4">
+                Transform your event with expert insights on automation, branding, and business strategy for SMEs, startups, and entrepreneurs.
+              </p>
+            </div>
+            <div>
+              <NewsletterSignup variant="footer" className="text-left" />
+            </div>
+          </div>
+          
+          <div className="border-t border-gray-800 pt-8 text-center">
+            <p>&copy; 2025 Curious with Mayank. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>

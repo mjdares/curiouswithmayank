@@ -1,0 +1,28 @@
+
+> curiouswithmayank@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.4.4 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://10.255.255.254:3000
+
+ ✓ Starting...
+ ✓ Ready in 1863ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.6s
+ HEAD / 200 in 5062ms
+ GET / 200 in 153ms
+ GET / 200 in 141ms
+ ✓ Compiled /contact in 436ms
+ GET /contact/ 200 in 518ms
+ GET /contact/ 200 in 215ms
+ GET /contact/ 200 in 127ms
+ ✓ Compiled in 119ms
+ ✓ Compiled in 99ms
+ GET /contact/ 200 in 78ms
+ ✓ Compiled in 65ms
+ GET /contact/ 200 in 74ms
+ ✓ Compiled /contact in 23ms
+ GET /contact/ 200 in 261ms
+ ✓ Compiled /contact in 22ms
+ GET /contact/ 200 in 243ms
