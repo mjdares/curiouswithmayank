@@ -215,7 +215,6 @@ export default function ContactForm({ type }: ContactFormProps) {
                 <option value="10k">₹10,000</option>
                 <option value="10k-25k">₹10,000 - ₹25,000</option>
                 <option value="25k+">₹25,000+</option>
-                <option value="discuss">Prefer to Discuss</option>
                 <option value="discuss">Prefer to discuss</option>
               </select>
             </div>
