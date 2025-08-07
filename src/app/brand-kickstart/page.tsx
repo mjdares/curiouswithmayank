@@ -328,7 +328,19 @@ export default function BrandKickstart() {
           </div>
 
           <div className="bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-blue-900/20 p-8 rounded-xl shadow-xl">
-            <form className="space-y-6">
+            <form 
+              name="brand-kickstart-inquiry" 
+              method="POST" 
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              className="space-y-6"
+            >
+              {/* Hidden fields for Netlify */}
+              <input type="hidden" name="form-name" value="brand-kickstart-inquiry" />
+              <p style={{display: 'none'}}>
+                <label>Don&apos;t fill this out if you&apos;re human: <input name="bot-field" /></label>
+              </p>
+              
               {/* Package Selection */}
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
@@ -366,6 +378,7 @@ export default function BrandKickstart() {
                     </label>
                     <input 
                       type="text" 
+                      name="fullName"
                       required
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
                       placeholder="Enter your full name"
@@ -377,6 +390,7 @@ export default function BrandKickstart() {
                     </label>
                     <input 
                       type="tel" 
+                      name="mobile"
                       required
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
                       placeholder="+91 9876543210"
@@ -389,6 +403,7 @@ export default function BrandKickstart() {
                   </label>
                   <input 
                     type="email" 
+                    name="email"
                     required
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
                     placeholder="your.email@example.com"
@@ -409,6 +424,7 @@ export default function BrandKickstart() {
                     </label>
                     <input 
                       type="text" 
+                      name="businessName"
                       required
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
                       placeholder="Your business/company name"
@@ -419,7 +435,7 @@ export default function BrandKickstart() {
                       <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                         Industry/Category *
                       </label>
-                      <select required className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white">
+                      <select name="industry" required className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white">
                         <option value="">Select your industry</option>
                         <option value="technology">Technology/Software</option>
                         <option value="ecommerce">E-commerce/Retail</option>
@@ -438,7 +454,7 @@ export default function BrandKickstart() {
                       <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                         Business Stage *
                       </label>
-                      <select required className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white">
+                      <select name="businessStage" required className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white">
                         <option value="">Select stage</option>
                         <option value="idea">Idea Stage</option>
                         <option value="startup">Just Started (0-6 months)</option>
@@ -452,6 +468,7 @@ export default function BrandKickstart() {
                       What does your business do? *
                     </label>
                     <textarea 
+                      name="businessDescription"
                       required
                       rows={4}
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
@@ -473,6 +490,7 @@ export default function BrandKickstart() {
                       Who are your ideal customers? *
                     </label>
                     <textarea 
+                      name="targetCustomers"
                       required
                       rows={3}
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
@@ -484,7 +502,7 @@ export default function BrandKickstart() {
                       <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                         Customer Type *
                       </label>
-                      <select required className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white">
+                      <select name="customerType" required className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white">
                         <option value="">Select customer type</option>
                         <option value="b2b">B2B (Businesses)</option>
                         <option value="b2c">B2C (Individual consumers)</option>
@@ -495,7 +513,7 @@ export default function BrandKickstart() {
                       <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                         Geographic Focus *
                       </label>
-                      <select required className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white">
+                      <select name="geographicFocus" required className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white">
                         <option value="">Select area</option>
                         <option value="local">Local/City</option>
                         <option value="state">State/Regional</option>
@@ -520,6 +538,7 @@ export default function BrandKickstart() {
                     </label>
                     <input 
                       type="text"
+                      name="domainName"
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
                       placeholder="yourcompany.com, yourbrand.in (we&apos;ll help check availability)"
                     />
@@ -531,6 +550,7 @@ export default function BrandKickstart() {
                       </label>
                       <input 
                         type="text"
+                        name="brandColors"
                         className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
                         placeholder="Blue, Red, #FF5733 (or say &apos;Need help choosing&apos;)"
                       />
@@ -539,7 +559,7 @@ export default function BrandKickstart() {
                       <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                         Preferred Timeline *
                       </label>
-                      <select required className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white">
+                      <select name="timeline" required className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white">
                         <option value="">Select timeline</option>
                         <option value="urgent">ASAP (3-5 days)</option>
                         <option value="standard">Standard (5-7 days)</option>
@@ -553,35 +573,35 @@ export default function BrandKickstart() {
                     </label>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                       <label className="flex items-center space-x-2">
-                        <input type="checkbox" className="rounded text-blue-600" />
+                        <input type="checkbox" name="socialMedia[]" value="linkedin" className="rounded text-blue-600" />
                         <span className="text-sm text-gray-700 dark:text-gray-300">LinkedIn</span>
                       </label>
                       <label className="flex items-center space-x-2">
-                        <input type="checkbox" className="rounded text-blue-600" />
+                        <input type="checkbox" name="socialMedia[]" value="facebook" className="rounded text-blue-600" />
                         <span className="text-sm text-gray-700 dark:text-gray-300">Facebook</span>
                       </label>
                       <label className="flex items-center space-x-2">
-                        <input type="checkbox" className="rounded text-blue-600" />
+                        <input type="checkbox" name="socialMedia[]" value="instagram" className="rounded text-blue-600" />
                         <span className="text-sm text-gray-700 dark:text-gray-300">Instagram</span>
                       </label>
                       <label className="flex items-center space-x-2">
-                        <input type="checkbox" className="rounded text-blue-600" />
+                        <input type="checkbox" name="socialMedia[]" value="whatsapp" className="rounded text-blue-600" />
                         <span className="text-sm text-gray-700 dark:text-gray-300">WhatsApp</span>
                       </label>
                       <label className="flex items-center space-x-2">
-                        <input type="checkbox" className="rounded text-blue-600" />
+                        <input type="checkbox" name="socialMedia[]" value="twitter" className="rounded text-blue-600" />
                         <span className="text-sm text-gray-700 dark:text-gray-300">Twitter</span>
                       </label>
                       <label className="flex items-center space-x-2">
-                        <input type="checkbox" className="rounded text-blue-600" />
+                        <input type="checkbox" name="socialMedia[]" value="youtube" className="rounded text-blue-600" />
                         <span className="text-sm text-gray-700 dark:text-gray-300">YouTube</span>
                       </label>
                       <label className="flex items-center space-x-2">
-                        <input type="checkbox" className="rounded text-blue-600" />
+                        <input type="checkbox" name="socialMedia[]" value="google-my-business" className="rounded text-blue-600" />
                         <span className="text-sm text-gray-700 dark:text-gray-300">Google My Business</span>
                       </label>
                       <label className="flex items-center space-x-2">
-                        <input type="checkbox" className="rounded text-blue-600" />
+                        <input type="checkbox" name="socialMedia[]" value="other" className="rounded text-blue-600" />
                         <span className="text-sm text-gray-700 dark:text-gray-300">Other</span>
                       </label>
                     </div>
@@ -591,6 +611,7 @@ export default function BrandKickstart() {
                       Additional Requirements or Questions
                     </label>
                     <textarea 
+                      name="additionalRequirements"
                       rows={3}
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
                       placeholder="Any specific features, design preferences, or questions you have..."
@@ -623,7 +644,7 @@ export default function BrandKickstart() {
                   <p>• Future Support: We&apos;re here to help you grow! Our team can assist with ongoing development, automation, and business process optimization as your business evolves.</p>
                 </div>
                 <label className="flex items-start space-x-3">
-                  <input type="checkbox" required className="mt-1 rounded text-blue-600" />
+                  <input type="checkbox" name="acceptTerms" required className="mt-1 rounded text-blue-600" />
                   <span className="text-sm text-gray-700 dark:text-gray-300">
                     I have read and agree to the terms and conditions mentioned above. I understand the scope of work, payment terms, and delivery timeline. *
                   </span>
