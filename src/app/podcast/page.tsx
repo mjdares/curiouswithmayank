@@ -2,6 +2,50 @@ import ContactForm from '@/components/ContactForm';
 import Link from 'next/link';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import SocialFollow from '@/components/SocialFollow';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Curious with Mayank Podcast - Conversations with Entrepreneurs | Curious with Mayank',
+  description: 'Join Mayank Jain on Curious with Mayank podcast for conversations about brand building, consumer psychology, marketing strategy with entrepreneurs and industry leaders.',
+  keywords: 'Curious with Mayank podcast, Mayank Jain, entrepreneur conversations, brand building, marketing psychology, consumer psychology, startup stories, business podcast, Indian entrepreneurs, SME stories',
+  openGraph: {
+    title: 'Curious with Mayank Podcast - Conversations with Entrepreneurs',
+    description: 'Join Mayank Jain on Curious with Mayank podcast for conversations about brand building, consumer psychology, marketing strategy with entrepreneurs and industry leaders.',
+    url: 'https://curiouswithmayank.com/podcast',
+    siteName: 'Curious with Mayank',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: 'https://curiouswithmayank.com/og-podcast.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Curious with Mayank Podcast - Conversations with Entrepreneurs',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Curious with Mayank Podcast - Conversations with Entrepreneurs',
+    description: 'Join Mayank Jain on Curious with Mayank podcast for conversations about brand building, consumer psychology, marketing strategy with entrepreneurs.',
+    images: ['https://curiouswithmayank.com/og-podcast.jpg'],
+    creator: '@curiouswithmayank',
+  },
+  alternates: {
+    canonical: 'https://curiouswithmayank.com/podcast',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
 
 export default function PodcastPage() {
   return (

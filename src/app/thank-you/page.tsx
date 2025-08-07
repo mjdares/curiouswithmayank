@@ -1,4 +1,45 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Thank You - Request Received | Curious with Mayank',
+  description: 'Thank you for your interest in Brand Kickstart service. We have received your request and will contact you within 24 hours.',
+  keywords: 'thank you, request received, Brand Kickstart, Mayank Jain, business consultation',
+  openGraph: {
+    title: 'Thank You - Request Received',
+    description: 'Thank you for your interest in Brand Kickstart service. We have received your request and will contact you within 24 hours.',
+    url: 'https://curiouswithmayank.com/thank-you',
+    siteName: 'Curious with Mayank',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: 'https://curiouswithmayank.com/og-thankyou.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Thank You - Request Received - Curious with Mayank',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Thank You - Request Received',
+    description: 'Thank you for your interest in Brand Kickstart service. We have received your request and will contact you within 24 hours.',
+    images: ['https://curiouswithmayank.com/og-thankyou.jpg'],
+    creator: '@curiouswithmayank',
+  },
+  alternates: {
+    canonical: 'https://curiouswithmayank.com/thank-you',
+  },
+  robots: {
+    index: false,
+    follow: true,
+    googleBot: {
+      index: false,
+      follow: true,
+    },
+  },
+};
 
 export default function ThankYou() {
   return (

@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /forms.html
+Disallow: /thank-you/
+
+Sitemap: https://curiouswithmayank.com/sitemap.xml
+
+Host: https://curiouswithmayank.com

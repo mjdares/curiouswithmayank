@@ -2,6 +2,27 @@ import ContactForm from '@/components/ContactForm';
 import Link from 'next/link';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import SocialFollow from '@/components/SocialFollow';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Training Programs for Entrepreneurs - Brand Strategy & Business Automation | Curious with Mayank',
+  description: 'Professional training sessions on brand strategy, business automation, and growth strategies for entrepreneurs and their teams. Book your customized training program today.',
+  keywords: 'business training, entrepreneur training, brand strategy training, automation training, SME growth, startup training, business development, Mayank Jain trainer',
+  openGraph: {
+    title: 'Training Programs for Entrepreneurs - Brand Strategy & Business Automation',
+    description: 'Professional training sessions on brand strategy, business automation, and growth strategies for entrepreneurs and their teams.',
+    url: 'https://curiouswithmayank.com/training',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Training Programs for Entrepreneurs',
+    description: 'Professional training sessions on brand strategy, business automation, and growth strategies for entrepreneurs.',
+  },
+  alternates: {
+    canonical: 'https://curiouswithmayank.com/training',
+  },
+};
 
 export default function TrainingPage() {
   return (

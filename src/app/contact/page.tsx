@@ -2,6 +2,50 @@ import ContactForm from '@/components/ContactForm';
 import Link from 'next/link';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import SocialFollow from '@/components/SocialFollow';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact Mayank Jain - Business Consultation & Speaking Inquiries | Curious with Mayank',
+  description: 'Get in touch with Mayank Jain for business consultation, training sessions, speaking engagements, and podcast collaborations. Expert in branding and automation.',
+  keywords: 'contact Mayank Jain, business consultation, speaking inquiries, training sessions, branding expert, automation consultant, podcast guest, business growth',
+  openGraph: {
+    title: 'Contact Mayank Jain - Business Consultation & Speaking Inquiries',
+    description: 'Get in touch with Mayank Jain for business consultation, training sessions, speaking engagements, and podcast collaborations. Expert in branding and automation.',
+    url: 'https://curiouswithmayank.com/contact',
+    siteName: 'Curious with Mayank',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: 'https://curiouswithmayank.com/og-contact.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Contact Mayank Jain - Business Consultation & Speaking',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Mayank Jain - Business Consultation & Speaking Inquiries',
+    description: 'Get in touch with Mayank Jain for business consultation, training sessions, speaking engagements, and podcast collaborations.',
+    images: ['https://curiouswithmayank.com/og-contact.jpg'],
+    creator: '@curiouswithmayank',
+  },
+  alternates: {
+    canonical: 'https://curiouswithmayank.com/contact',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
 
 export default function ContactPage() {
   return (

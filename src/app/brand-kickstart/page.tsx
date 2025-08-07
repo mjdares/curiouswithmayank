@@ -1,4 +1,25 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Brand Kickstart - Professional Online Presence for ₹25,000 | Curious with Mayank',
+  description: 'Launch your business with confidence! Get a professional landing page, social media integration, and complete online presence in 7 days for ₹25,000. Perfect for new entrepreneurs.',
+  keywords: 'brand kickstart, website design, landing page, small business website, startup online presence, professional website, social media integration, business launch, entrepreneur website, Mayank Jain',
+  openGraph: {
+    title: 'Brand Kickstart - Professional Online Presence for ₹25,000',
+    description: 'Launch your business with confidence! Get a professional landing page, social media integration, and complete online presence in 7 days.',
+    url: 'https://curiouswithmayank.com/brand-kickstart',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Brand Kickstart - Professional Online Presence for ₹25,000',
+    description: 'Launch your business with confidence! Get a professional landing page and complete online presence in 7 days.',
+  },
+  alternates: {
+    canonical: 'https://curiouswithmayank.com/brand-kickstart',
+  },
+};
 
 export default function BrandKickstart() {
   return (
