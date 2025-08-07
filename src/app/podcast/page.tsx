@@ -35,10 +35,12 @@ export default function PodcastPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="#latest-episodes" 
+              href="https://www.instagram.com/curiouswithmayank/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-medium"
             >
-              Latest Episodes
+              Watch on Instagram
             </a>
             <a 
               href="#be-guest" 
@@ -50,80 +52,6 @@ export default function PodcastPage() {
         </div>
       </section>
 
-      {/* Latest Episodes */}
-      <section id="latest-episodes" className="px-6 py-16 bg-white dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto">
-          <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Latest Episodes
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 p-6 rounded-xl">
-              <div className="mb-4">
-                <span className="text-sm text-purple-600 dark:text-purple-400 font-medium">Episode 15</span>
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mt-1">
-                  AI Automation Strategies for Modern Businesses
-                </h4>
-              </div>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Deep dive into practical AI implementation strategies that drive real business results.
-              </p>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-gray-500 dark:text-gray-400">45 min</span>
-                <a href="https://www.instagram.com/curiouswithmayank/" target="_blank" rel="noopener noreferrer" className="text-purple-600 dark:text-purple-400 font-medium hover:underline">
-                  Watch on Instagram →
-                </a>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-900/20 dark:to-teal-900/20 p-6 rounded-xl">
-              <div className="mb-4">
-                <span className="text-sm text-green-600 dark:text-green-400 font-medium">Episode 14</span>
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mt-1">
-                  Building Scalable SaaS Platforms
-                </h4>
-              </div>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                From MVP to enterprise: Lessons learned from successful SaaS entrepreneurs.
-              </p>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-gray-500 dark:text-gray-400">52 min</span>
-                <a href="https://www.instagram.com/curiouswithmayank/" target="_blank" rel="noopener noreferrer" className="text-green-600 dark:text-green-400 font-medium hover:underline">
-                  Watch on Instagram →
-                </a>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 p-6 rounded-xl">
-              <div className="mb-4">
-                <span className="text-sm text-orange-600 dark:text-orange-400 font-medium">Episode 13</span>
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mt-1">
-                  The Future of Work: Remote-First Companies
-                </h4>
-              </div>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                How leading companies are building distributed teams and culture.
-              </p>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-gray-500 dark:text-gray-400">38 min</span>
-                <a href="https://www.instagram.com/curiouswithmayank/" target="_blank" rel="noopener noreferrer" className="text-orange-600 dark:text-orange-400 font-medium hover:underline">
-                  Watch on Instagram →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <a 
-              href="https://www.instagram.com/curiouswithmayank/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block px-8 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors font-medium"
-            >
-              View All Content on Instagram
-            </a>
-          </div>
-        </div>
-      </section>
 
       {/* Podcast Topics */}
       <section className="px-6 py-16">

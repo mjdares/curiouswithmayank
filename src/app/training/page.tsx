@@ -26,12 +26,12 @@ export default function TrainingPage() {
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-            Let&apos;s Share Experiences at
-            <span className="text-blue-600 dark:text-blue-400"> Your Event</span>
+            Training Programs for
+            <span className="text-blue-600 dark:text-blue-400"> Entrepreneurs</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-            I enjoy sharing learnings from my journey in automation, branding, and business growth 
-            with fellow entrepreneurs and teams at conferences and events.
+            I provide practical training sessions on automation, branding, and business growth 
+            for entrepreneurs and their teams looking to scale their ventures.
           </p>
         </div>
       </section>
@@ -145,10 +145,10 @@ export default function TrainingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Let&apos;s Connect About Your Event
+              Let&apos;s Connect About Your Training Needs
             </h3>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Interested in having me share some experiences at your event? Let&apos;s discuss what might work.
+              Ready to provide practical training for your team? Let&apos;s discuss what program would work best for your organization.
             </p>
           </div>
           <ContactForm type="training" />

@@ -331,6 +331,7 @@ export default function BrandKickstart() {
             <form 
               name="brand-kickstart-inquiry" 
               method="POST" 
+              action="/thank-you"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               className="space-y-6"

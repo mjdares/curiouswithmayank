@@ -49,5 +49,79 @@
         <input type="hidden" name="bot-field" />
         <input name="email" type="email" />
     </form>
+    
+    <!-- Brand Kickstart Inquiry -->
+    <form name="brand-kickstart-inquiry" netlify netlify-honeypot="bot-field" hidden>
+        <input type="hidden" name="form-name" value="brand-kickstart-inquiry" />
+        <input type="hidden" name="bot-field" />
+        
+        <!-- Package Selection -->
+        <input type="radio" name="package" value="brand-kickstart" />
+        <input type="radio" name="package" value="custom-development" />
+        
+        <!-- Personal Information -->
+        <input type="text" name="fullName" />
+        <input type="tel" name="mobile" />
+        <input type="email" name="email" />
+        
+        <!-- Business Information -->
+        <input type="text" name="businessName" />
+        <select name="industry">
+            <option value="technology">Technology/Software</option>
+            <option value="ecommerce">E-commerce/Retail</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="education">Education/Training</option>
+            <option value="finance">Finance/Consulting</option>
+            <option value="food">Food & Beverage</option>
+            <option value="beauty">Beauty/Wellness</option>
+            <option value="real-estate">Real Estate</option>
+            <option value="manufacturing">Manufacturing</option>
+            <option value="services">Professional Services</option>
+            <option value="other">Other</option>
+        </select>
+        <select name="businessStage">
+            <option value="idea">Idea Stage</option>
+            <option value="startup">Just Started (0-6 months)</option>
+            <option value="early">Early Stage (6m-2 years)</option>
+            <option value="growth">Growth Stage (2+ years)</option>
+        </select>
+        <textarea name="businessDescription"></textarea>
+        
+        <!-- Target Customers -->
+        <textarea name="targetCustomers"></textarea>
+        <select name="customerType">
+            <option value="b2b">B2B (Businesses)</option>
+            <option value="b2c">B2C (Individual consumers)</option>
+            <option value="both">Both B2B and B2C</option>
+        </select>
+        <select name="geographicFocus">
+            <option value="local">Local/City</option>
+            <option value="state">State/Regional</option>
+            <option value="national">All India</option>
+            <option value="global">International</option>
+        </select>
+        
+        <!-- Project Requirements -->
+        <input type="text" name="domainName" />
+        <input type="text" name="brandColors" />
+        <select name="timeline">
+            <option value="urgent">ASAP (3-5 days)</option>
+            <option value="standard">Standard (5-7 days)</option>
+            <option value="flexible">Flexible (1-2 weeks)</option>
+        </select>
+        
+        <!-- Social Media -->
+        <input type="checkbox" name="socialMedia[]" value="linkedin" />
+        <input type="checkbox" name="socialMedia[]" value="facebook" />
+        <input type="checkbox" name="socialMedia[]" value="instagram" />
+        <input type="checkbox" name="socialMedia[]" value="whatsapp" />
+        <input type="checkbox" name="socialMedia[]" value="twitter" />
+        <input type="checkbox" name="socialMedia[]" value="youtube" />
+        <input type="checkbox" name="socialMedia[]" value="google-my-business" />
+        <input type="checkbox" name="socialMedia[]" value="other" />
+        
+        <textarea name="additionalRequirements"></textarea>
+        <input type="checkbox" name="acceptTerms" />
+    </form>
 </body>
 </html>
