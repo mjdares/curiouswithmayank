@@ -13,9 +13,9 @@ export default function Home() {
           </h1>
           <div className="hidden md:flex space-x-8">
             <a href="#about" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">About</a>
+            <Link href="/brand-kickstart" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Brand Kickstart</Link>
             <Link href="/training" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Training</Link>
             <Link href="/podcast" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Podcast</Link>
-            <a href="#insights" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Insights</a>
             <Link href="/contact" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contact</Link>
           </div>
         </div>
