@@ -30,7 +30,7 @@ export default function BrandKickstart() {
             <span className="text-blue-600 dark:text-blue-400"> Confidence</span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-            Stop waiting to get "ready" - businesses are built on momentum! Get your professional online presence 
+            Stop waiting to get &quot;ready&quot; - businesses are built on momentum! Get your professional online presence 
             in just 7 days and start approaching customers with confidence. You can evolve as you grow.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -60,11 +60,11 @@ export default function BrandKickstart() {
             🚀 Businesses Are Built on Momentum, Not Perfection
           </h2>
           <p className="text-lg text-emerald-100 mb-4">
-            Don't wait to get "ready" - start with something solid and keep evolving. This is your first step online, 
+            Don&apos;t wait to get &quot;ready&quot; - start with something solid and keep evolving. This is your first step online, 
             and with time, our team can help you build end-to-end business processes, automation, and integrations.
           </p>
           <p className="text-emerald-200 font-medium">
-            We want you to succeed. Let's get you started today! 💪
+            We want you to succeed. Let&apos;s get you started today! 💪
           </p>
         </div>
       </section>
@@ -82,19 +82,19 @@ export default function BrandKickstart() {
                   <div className="w-6 h-6 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mt-1">
                     <span className="text-red-600 dark:text-red-400 text-sm">✗</span>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-300">"I don't feel professional enough to approach customers"</p>
+                  <p className="text-gray-600 dark:text-gray-300">&quot;I don&apos;t feel professional enough to approach customers&quot;</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mt-1">
                     <span className="text-red-600 dark:text-red-400 text-sm">✗</span>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-300">"My business looks too small/informal online"</p>
+                  <p className="text-gray-600 dark:text-gray-300">&quot;My business looks too small/informal online&quot;</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mt-1">
                     <span className="text-red-600 dark:text-red-400 text-sm">✗</span>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-300">"I'm waiting to have everything perfect before launching"</p>
+                  <p className="text-gray-600 dark:text-gray-300">&quot;I&apos;m waiting to have everything perfect before launching&quot;</p>
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function BrandKickstart() {
               Choose Your Starting Point
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              From quick launch to custom solutions - we've got you covered
+              From quick launch to custom solutions - we&apos;ve got you covered
             </p>
           </div>
 
@@ -319,7 +319,7 @@ export default function BrandKickstart() {
               Ready to Start Your Journey?
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
-              Fill out this form and let's discuss how we can help you launch your business online
+              Fill out this form and let&apos;s discuss how we can help you launch your business online
             </p>
             <div className="inline-flex items-center space-x-2 bg-green-100 dark:bg-green-900/30 px-4 py-2 rounded-full text-green-800 dark:text-green-400 text-sm font-medium">
               <span>🔒</span>
@@ -521,7 +521,7 @@ export default function BrandKickstart() {
                     <input 
                       type="text"
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
-                      placeholder="yourcompany.com, yourbrand.in (we'll help check availability)"
+                      placeholder="yourcompany.com, yourbrand.in (we&apos;ll help check availability)"
                     />
                   </div>
                   <div className="grid md:grid-cols-2 gap-4">
@@ -532,7 +532,7 @@ export default function BrandKickstart() {
                       <input 
                         type="text"
                         className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
-                        placeholder="Blue, Red, #FF5733 (or say 'Need help choosing')"
+                        placeholder="Blue, Red, #FF5733 (or say &apos;Need help choosing&apos;)"
                       />
                     </div>
                     <div>
@@ -620,7 +620,7 @@ export default function BrandKickstart() {
                   <p className="mt-4"><strong>General Terms:</strong></p>
                   <p>• Refund Policy: 50% refund if project cancelled within 24 hours of advance payment. No refund after work begins.</p>
                   <p>• Ownership: You own all content and design. Source code ownership transferred after full payment.</p>
-                  <p>• Future Support: We're here to help you grow! Our team can assist with ongoing development, automation, and business process optimization as your business evolves.</p>
+                  <p>• Future Support: We&apos;re here to help you grow! Our team can assist with ongoing development, automation, and business process optimization as your business evolves.</p>
                 </div>
                 <label className="flex items-start space-x-3">
                   <input type="checkbox" required className="mt-1 rounded text-blue-600" />
@@ -639,7 +639,7 @@ export default function BrandKickstart() {
                   Schedule Strategy Call & Get Started
                 </button>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
-                  We'll contact you within 24 hours to schedule your strategy call
+                  We&apos;ll contact you within 24 hours to schedule your strategy call
                 </p>
               </div>
             </form>
@@ -669,7 +669,7 @@ export default function BrandKickstart() {
                   Fill Form & Strategy Call
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Complete our detailed form above. We'll schedule a 30-minute strategy call to understand your vision, discuss package options, and finalize requirements.
+                  Complete our detailed form above. We&apos;ll schedule a 30-minute strategy call to understand your vision, discuss package options, and finalize requirements.
                 </p>
               </div>
             </div>
@@ -711,7 +711,7 @@ export default function BrandKickstart() {
                   Launch & Ongoing Support
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Final review, revisions, and launch. We provide all access details and documentation. As you grow, we're here to help with automation, integrations, and scaling solutions.
+                  Final review, revisions, and launch. We provide all access details and documentation. As you grow, we&apos;re here to help with automation, integrations, and scaling solutions.
                 </p>
               </div>
             </div>
