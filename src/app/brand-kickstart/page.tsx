@@ -2,18 +2,18 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Brand Kickstart - Professional Online Presence for ₹25,000 | Curious with Mayank',
-  description: 'Launch your business with confidence! Get a professional landing page, social media integration, and complete online presence in 7 days for ₹25,000. Perfect for new entrepreneurs.',
+  title: 'Brand Kickstart - Professional Online Presence for ₹50,000 | Curious with Mayank',
+  description: 'Launch your business with confidence! Get a professional landing page, social media integration, and complete online presence in 7 days for ₹50,000. Perfect for new entrepreneurs.',
   keywords: 'brand kickstart, website design, landing page, small business website, startup online presence, professional website, social media integration, business launch, entrepreneur website, Mayank Jain',
   openGraph: {
-    title: 'Brand Kickstart - Professional Online Presence for ₹25,000',
+    title: 'Brand Kickstart - Professional Online Presence for ₹50,000',
     description: 'Launch your business with confidence! Get a professional landing page, social media integration, and complete online presence in 7 days.',
     url: 'https://curiouswithmayank.com/brand-kickstart',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Brand Kickstart - Professional Online Presence for ₹25,000',
+    title: 'Brand Kickstart - Professional Online Presence for ₹50,000',
     description: 'Launch your business with confidence! Get a professional landing page and complete online presence in 7 days.',
   },
   alternates: {
@@ -59,7 +59,7 @@ export default function BrandKickstart() {
               href="#schedule-call"
               className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-lg"
             >
-              Start Your Journey - ₹25,000
+              Start Your Journey - ₹50,000
             </a>
             <a 
               href="#packages"
@@ -69,7 +69,7 @@ export default function BrandKickstart() {
             </a>
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            💳 50% advance • 🚀 7-day delivery • 🔄 2 revisions included
+            💳 ₹30,000 advance • 🚀 7-day delivery • 🔄 2 revisions included
           </p>
         </div>
       </section>
@@ -170,7 +170,7 @@ export default function BrandKickstart() {
                 <p className="text-blue-100">Perfect first step online</p>
               </div>
               <div className="p-6">
-                <div className="text-3xl font-bold text-gray-900 dark:text-white mb-2">₹25,000</div>
+                <div className="text-3xl font-bold text-gray-900 dark:text-white mb-2">₹50,000</div>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">Everything you need to launch professionally</p>
                 
                 <div className="space-y-3 mb-8">
@@ -221,7 +221,7 @@ export default function BrandKickstart() {
                 <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-6">
                   <p className="text-sm text-blue-800 dark:text-blue-300 font-medium">
                     ⏱️ Delivery: 5-7 business days<br/>
-                    💳 50% advance payment
+                    💳 ₹30,000 advance payment
                   </p>
                 </div>
 
@@ -373,7 +373,7 @@ export default function BrandKickstart() {
                   <label className="flex items-center space-x-3 p-4 border border-gray-300 dark:border-gray-600 rounded-lg cursor-pointer hover:bg-blue-50 dark:hover:bg-blue-900/20">
                     <input type="radio" name="package" value="brand-kickstart" className="text-blue-600" />
                     <div>
-                      <div className="font-medium text-gray-900 dark:text-white">Brand Kickstart - ₹25,000</div>
+                      <div className="font-medium text-gray-900 dark:text-white">Brand Kickstart - ₹50,000</div>
                       <div className="text-sm text-gray-600 dark:text-gray-300">Professional landing page with social integration</div>
                     </div>
                   </label>
@@ -648,8 +648,8 @@ export default function BrandKickstart() {
                   📋 Terms & Conditions
                 </h3>
                 <div className="text-sm text-gray-700 dark:text-gray-300 space-y-2 mb-4">
-                  <p><strong>Brand Kickstart Package (₹25,000):</strong></p>
-                  <p>• Payment: 50% advance payment (₹12,500) required to start. Balance due on completion.</p>
+                  <p><strong>Brand Kickstart Package (₹50,000):</strong></p>
+                  <p>• Payment: ₹30,000 advance payment required to start. Balance (₹20,000) due on completion.</p>
                   <p>• Delivery: 5-7 business days from advance payment and final requirements confirmation.</p>
                   <p>• Inclusions: Single landing page, social media integration, mobile responsive design, basic SEO setup.</p>
                   <p>• Exclusions: Domain registration costs (₹500-2000/year), hosting costs (₹3000-5000/year), content writing for more than 5 sections, e-commerce features, complex integrations.</p>
@@ -726,7 +726,7 @@ export default function BrandKickstart() {
                   Confirmation & Payment
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Receive detailed proposal and quote. For Brand Kickstart: pay 50% advance (₹12,500). For Custom Development: payment terms based on project scope.
+                  Receive detailed proposal and quote. For Brand Kickstart: pay ₹30,000 advance. For Custom Development: payment terms based on project scope.
                 </p>
               </div>
             </div>
