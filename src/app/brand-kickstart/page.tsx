@@ -21,6 +21,32 @@ export const metadata: Metadata = {
   },
 };
 
+const CheckIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+    <path d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586l-3.293-3.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" />
+  </svg>
+);
+
+const CrossIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+    <path d="M6.707 5.293a1 1 0 00-1.414 1.414L8.586 10l-3.293 3.293a1 1 0 001.414 1.414L10 11.414l3.293 3.293a1 1 0 001.414-1.414L11.414 10l3.293-3.293a1 1 0 00-1.414-1.414L10 8.586 6.707 5.293z" />
+  </svg>
+);
+
+const SparkIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M12 2l1.4 5.1L18 6l-3.3 3.6L16.8 13l-4.8-1.2L8 16l1.3-4.5L6 8l4.6-.8L12 2z" />
+  </svg>
+);
+
+const LockIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
+    <path d="M17 10V7a5 5 0 10-10 0v3" strokeLinecap="round" />
+    <rect x="5" y="10" width="14" height="10" rx="2" />
+    <path d="M12 14v2" strokeLinecap="round" />
+  </svg>
+);
+
 export default function BrandKickstart() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-blue-900">
@@ -43,8 +69,9 @@ export default function BrandKickstart() {
       {/* Hero Section */}
       <section className="px-6 py-16">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-block px-4 py-2 bg-green-100 dark:bg-green-900/30 rounded-full text-green-800 dark:text-green-400 text-sm font-medium mb-6">
-            ✨ Your First Step Online - Start Building Momentum Today
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 dark:bg-green-900/30 rounded-full text-green-800 dark:text-green-400 text-sm font-medium mb-6">
+            <SparkIcon className="h-4 w-4 text-green-600 dark:text-green-300" />
+            <span>Your first step online – start building momentum today</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
             Launch Your Business with
@@ -68,8 +95,8 @@ export default function BrandKickstart() {
               View All Packages
             </a>
           </div>
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            💳 ₹30,000 advance • 🚀 7-day delivery • 🔄 2 revisions included
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            ₹30,000 advance • 7-day delivery • 2 revisions included
           </p>
         </div>
       </section>
@@ -78,14 +105,14 @@ export default function BrandKickstart() {
       <section className="px-6 py-12 bg-gradient-to-r from-emerald-500 to-blue-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">
-            🚀 Businesses Are Built on Momentum, Not Perfection
+            Businesses Are Built on Momentum, Not Perfection
           </h2>
           <p className="text-lg text-emerald-100 mb-4">
             Don&apos;t wait to get &quot;ready&quot; - start with something solid and keep evolving. This is your first step online, 
             and with time, our team can help you build end-to-end business processes, automation, and integrations.
           </p>
           <p className="text-emerald-200 font-medium">
-            We want you to succeed. Let&apos;s get you started today! 💪
+            We want you to succeed. Let&apos;s get you started today.
           </p>
         </div>
       </section>
@@ -101,19 +128,19 @@ export default function BrandKickstart() {
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mt-1">
-                    <span className="text-red-600 dark:text-red-400 text-sm">✗</span>
+                    <CrossIcon className="w-3.5 h-3.5 text-red-600 dark:text-red-400" />
                   </div>
                   <p className="text-gray-600 dark:text-gray-300">&quot;I don&apos;t feel professional enough to approach customers&quot;</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mt-1">
-                    <span className="text-red-600 dark:text-red-400 text-sm">✗</span>
+                    <CrossIcon className="w-3.5 h-3.5 text-red-600 dark:text-red-400" />
                   </div>
                   <p className="text-gray-600 dark:text-gray-300">&quot;My business looks too small/informal online&quot;</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mt-1">
-                    <span className="text-red-600 dark:text-red-400 text-sm">✗</span>
+                    <CrossIcon className="w-3.5 h-3.5 text-red-600 dark:text-red-400" />
                   </div>
                   <p className="text-gray-600 dark:text-gray-300">&quot;I&apos;m waiting to have everything perfect before launching&quot;</p>
                 </div>
@@ -127,19 +154,19 @@ export default function BrandKickstart() {
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
                     <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1">
-                      <span className="text-white text-sm">✓</span>
+                      <CheckIcon className="w-3.5 h-3.5 text-white" />
                     </div>
                     <p className="text-gray-700 dark:text-gray-300">Start with a professional foundation today</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1">
-                      <span className="text-white text-sm">✓</span>
+                      <CheckIcon className="w-3.5 h-3.5 text-white" />
                     </div>
                     <p className="text-gray-700 dark:text-gray-300">Approach customers with confidence immediately</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1">
-                      <span className="text-white text-sm">✓</span>
+                      <CheckIcon className="w-3.5 h-3.5 text-white" />
                     </div>
                     <p className="text-gray-700 dark:text-gray-300">Build and evolve as your business grows</p>
                   </div>
@@ -176,43 +203,43 @@ export default function BrandKickstart() {
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center space-x-3">
                     <span className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                      <CheckIcon className="w-3 h-3 text-white" />
                     </span>
                     <span className="text-gray-700 dark:text-gray-300">Professional landing page</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <span className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                      <CheckIcon className="w-3 h-3 text-white" />
                     </span>
                     <span className="text-gray-700 dark:text-gray-300">Mobile responsive design</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <span className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                      <CheckIcon className="w-3 h-3 text-white" />
                     </span>
                     <span className="text-gray-700 dark:text-gray-300">Social media integration</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <span className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                      <CheckIcon className="w-3 h-3 text-white" />
                     </span>
                     <span className="text-gray-700 dark:text-gray-300">Contact forms & CTAs</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <span className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                      <CheckIcon className="w-3 h-3 text-white" />
                     </span>
                     <span className="text-gray-700 dark:text-gray-300">SEO optimization</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <span className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                      <CheckIcon className="w-3 h-3 text-white" />
                     </span>
                     <span className="text-gray-700 dark:text-gray-300">Google Analytics setup</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <span className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                      <CheckIcon className="w-3 h-3 text-white" />
                     </span>
                     <span className="text-gray-700 dark:text-gray-300">2 rounds of revisions</span>
                   </div>
@@ -220,8 +247,8 @@ export default function BrandKickstart() {
 
                 <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-6">
                   <p className="text-sm text-blue-800 dark:text-blue-300 font-medium">
-                    ⏱️ Delivery: 5-7 business days<br/>
-                    💳 ₹30,000 advance payment
+                    Delivery: 5-7 business days<br/>
+                    Advance payment: ₹30,000
                   </p>
                 </div>
 
@@ -247,43 +274,43 @@ export default function BrandKickstart() {
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center space-x-3">
                     <span className="w-5 h-5 bg-purple-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                      <CheckIcon className="w-3 h-3 text-white" />
                     </span>
                     <span className="text-gray-700 dark:text-gray-300">Multi-page websites</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <span className="w-5 h-5 bg-purple-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                      <CheckIcon className="w-3 h-3 text-white" />
                     </span>
                     <span className="text-gray-700 dark:text-gray-300">E-commerce functionality</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <span className="w-5 h-5 bg-purple-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                      <CheckIcon className="w-3 h-3 text-white" />
                     </span>
                     <span className="text-gray-700 dark:text-gray-300">Custom integrations</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <span className="w-5 h-5 bg-purple-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                      <CheckIcon className="w-3 h-3 text-white" />
                     </span>
                     <span className="text-gray-700 dark:text-gray-300">Business automation</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <span className="w-5 h-5 bg-purple-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                      <CheckIcon className="w-3 h-3 text-white" />
                     </span>
                     <span className="text-gray-700 dark:text-gray-300">CRM/ERP solutions</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <span className="w-5 h-5 bg-purple-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                      <CheckIcon className="w-3 h-3 text-white" />
                     </span>
                     <span className="text-gray-700 dark:text-gray-300">Third-party API integrations</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <span className="w-5 h-5 bg-purple-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                      <CheckIcon className="w-3 h-3 text-white" />
                     </span>
                     <span className="text-gray-700 dark:text-gray-300">Ongoing support & maintenance</span>
                   </div>
@@ -291,9 +318,9 @@ export default function BrandKickstart() {
 
                 <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg mb-6">
                   <p className="text-sm text-purple-800 dark:text-purple-300 font-medium">
-                    ⏱️ Delivery: Based on scope<br/>
-                    💡 Detailed proposal provided<br/>
-                    📞 Free consultation call
+                    Delivery: Based on scope<br/>
+                    Detailed proposal provided<br/>
+                    Free consultation call
                   </p>
                 </div>
 
@@ -310,7 +337,7 @@ export default function BrandKickstart() {
           {/* Growth Message */}
           <div className="bg-gradient-to-br from-emerald-50 to-blue-50 dark:from-emerald-900/20 dark:to-blue-900/20 p-8 rounded-xl text-center border border-emerald-200 dark:border-emerald-800">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              🚀 Start Small, Think Big, Grow Smart
+              Start Small, Think Big, Grow Smart
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
               Begin with Brand Kickstart to establish your online presence immediately. As your business grows, 
@@ -343,7 +370,7 @@ export default function BrandKickstart() {
               Fill out this form and let&apos;s discuss how we can help you launch your business online
             </p>
             <div className="inline-flex items-center space-x-2 bg-green-100 dark:bg-green-900/30 px-4 py-2 rounded-full text-green-800 dark:text-green-400 text-sm font-medium">
-              <span>🔒</span>
+              <LockIcon className="h-4 w-4" />
               <span>Your information is completely secure and confidential</span>
             </div>
           </div>
@@ -645,7 +672,7 @@ export default function BrandKickstart() {
               {/* Terms and Agreement */}
               <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 p-6 rounded-lg">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                  📋 Terms & Conditions
+                  Terms & Conditions
                 </h3>
                 <div className="text-sm text-gray-700 dark:text-gray-300 space-y-2 mb-4">
                   <p><strong>Brand Kickstart Package (₹50,000):</strong></p>
