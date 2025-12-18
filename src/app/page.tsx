@@ -16,18 +16,6 @@ export default function Home() {
     { href: '/contact', label: 'Contact' },
   ];
 
-  const ArrowIcon = (
-    <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-      <path d="M11.586 5H7a1 1 0 100 2h3.586L5.293 12.293a1 1 0 101.414 1.414L12 8.414V12a1 1 0 102 0V6a1 1 0 00-1-1h-5z" />
-    </svg>
-  );
-
-  const SparkIcon = (
-    <svg className="h-6 w-6 text-blue-600 dark:text-blue-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M12 2l1.4 5.1L18 6l-3.3 3.6L16.8 13l-4.8-1.2L8 16l1.3-4.5L6 8l4.6-.8L12 2z" />
-    </svg>
-  );
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-100 text-slate-900 dark:from-slate-950 dark:via-slate-950 dark:to-slate-900">
       <div
@@ -112,9 +100,7 @@ export default function Home() {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.label}
-                    <span aria-hidden className="text-blue-600 dark:text-blue-300">
-                      {ArrowIcon}
-                    </span>
+                    <span aria-hidden>↗</span>
                   </a>
                 ) : (
                   <Link
@@ -124,9 +110,7 @@ export default function Home() {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.label}
-                    <span aria-hidden className="text-blue-600 dark:text-blue-300">
-                      {ArrowIcon}
-                    </span>
+                    <span aria-hidden>↗</span>
                   </Link>
                 )
               ))}
@@ -156,8 +140,8 @@ export default function Home() {
             <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-12 xl:gap-16 items-center">
               <div className="space-y-8">
                 <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/80 shadow-lg shadow-blue-500/10 backdrop-blur dark:bg-slate-900/70 dark:shadow-blue-500/5 border border-slate-100/70 dark:border-slate-800">
-                  <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-blue-50 text-blue-600 shadow-inner shadow-blue-100 ring-1 ring-blue-100 dark:bg-blue-500/10 dark:text-blue-300 dark:ring-blue-500/30">
-                    {SparkIcon}
+                  <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-600 text-white text-sm font-semibold">
+                    ✦
                   </span>
                   <span className="text-sm font-medium text-slate-600 dark:text-slate-300 tracking-tight">
                     Workshops, content & community for emerging leaders
