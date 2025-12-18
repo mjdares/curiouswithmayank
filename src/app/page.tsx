@@ -1,109 +1,194 @@
+"use client";
+
+import { useState } from 'react';
 import Link from 'next/link';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import SocialFollow from '@/components/SocialFollow';
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navLinks = [
+    { href: '#about', label: 'About' },
+    { href: '/brand-kickstart', label: 'Brand Kickstart' },
+    { href: '/training', label: 'Training' },
+    { href: '/podcast', label: 'Podcast' },
+    { href: '/contact', label: 'Contact' },
+  ];
+
+  const ArrowIcon = (
+    <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path d="M11.586 5H7a1 1 0 100 2h3.586L5.293 12.293a1 1 0 101.414 1.414L12 8.414V12a1 1 0 102 0V6a1 1 0 00-1-1h-5z" />
+    </svg>
+  );
+
+  const SparkIcon = (
+    <svg className="h-6 w-6 text-blue-600 dark:text-blue-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2l1.4 5.1L18 6l-3.3 3.6L16.8 13l-4.8-1.2L8 16l1.3-4.5L6 8l4.6-.8L12 2z" />
+    </svg>
+  );
+
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-100 text-slate-900 dark:from-slate-950 dark:via-slate-950 dark:to-slate-900">
+      <div
+        className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.08),transparent_35%),radial-gradient(circle_at_80%_0%,rgba(167,139,250,0.08),transparent_30%),radial-gradient(circle_at_50%_80%,rgba(16,185,129,0.06),transparent_35%)]"
+        aria-hidden
+      />
+
       {/* Navigation */}
-      <nav className="px-6 py-5 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div>
-            <Link href="/" className="text-2xl font-bold text-slate-900 dark:text-white">
-              Curious with Mayank
-            </Link>
-            <p className="hidden sm:block text-sm text-slate-500 dark:text-slate-400">
-              Brand-led growth for modern founders & creators
-            </p>
+      <nav className="sticky top-0 z-50 px-4 sm:px-6 py-4">
+        <div className="max-w-7xl mx-auto flex items-center justify-between rounded-2xl border border-white/50 bg-white/70 px-4 sm:px-6 py-3 shadow-lg shadow-slate-300/30 backdrop-blur-xl dark:border-slate-800/70 dark:bg-slate-900/70 dark:shadow-black/40">
+          <div className="flex items-center gap-3">
+            <div
+              className="h-10 w-10 rounded-2xl bg-gradient-to-br from-blue-600/80 via-indigo-500/80 to-purple-600/80 shadow-inner shadow-blue-500/30 ring-1 ring-white/40 dark:ring-white/5"
+              aria-hidden
+            />
+            <div>
+              <Link href="/" className="text-2xl font-bold text-slate-900 dark:text-white">
+                Curious with Mayank
+              </Link>
+              <p className="hidden sm:block text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                Brand-led growth for modern founders & creators
+              </p>
+            </div>
           </div>
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-            <a
-              href="#about"
-              className="text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors"
-            >
-              About
-            </a>
-            <Link
-              href="/brand-kickstart"
-              className="text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors"
-            >
-              Brand Kickstart
-            </Link>
-            <Link
-              href="/training"
-              className="text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors"
-            >
-              Training
-            </Link>
-            <Link
-              href="/podcast"
-              className="text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors"
-            >
-              Podcast
-            </Link>
+
+          <div className="hidden md:flex items-center gap-6 text-sm font-medium">
+            {navLinks.map((link) => (
+              link.href.startsWith('#') ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-300 transition-colors"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-300 transition-colors"
+                >
+                  {link.label}
+                </Link>
+              )
+            ))}
+          </div>
+
+          <div className="flex items-center gap-3">
             <Link
               href="/contact"
-              className="text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors"
+              className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/60 bg-slate-900 text-white shadow-md shadow-blue-500/30 transition-all hover:-translate-y-0.5 hover:bg-blue-600 dark:border-slate-700 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
             >
-              Contact
+              <span>Let&apos;s talk</span>
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M7.293 14.707a1 1 0 010-1.414L11.586 9 7.293 4.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" />
+              </svg>
             </Link>
+
+            <button
+              type="button"
+              className="md:hidden inline-flex items-center justify-center rounded-xl border border-white/60 bg-white/80 p-2 text-slate-700 shadow-sm shadow-slate-200/50 backdrop-blur transition hover:border-blue-200 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900/80 dark:text-slate-200 dark:hover:border-blue-500"
+              aria-label="Toggle navigation"
+              aria-expanded={isMenuOpen}
+              onClick={() => setIsMenuOpen((prev) => !prev)}
+            >
+              <svg className="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.8" fill="none" strokeLinecap="round">
+                {isMenuOpen ? <path d="M6 6l12 12M6 18L18 6" /> : <path d="M4 7h16M4 12h16M10 17h10" />}
+              </svg>
+            </button>
           </div>
-          <Link
-            href="/contact"
-            className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-transparent bg-slate-900 text-white dark:bg-white dark:text-slate-950 hover:bg-blue-600 dark:hover:bg-slate-200 transition-colors"
-          >
-            <span>Let&apos;s talk</span>
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-              <path d="M7.293 14.707a1 1 0 010-1.414L11.586 9 7.293 4.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" />
-            </svg>
-          </Link>
         </div>
+
+        {isMenuOpen && (
+          <div className="mt-3 max-w-7xl mx-auto rounded-2xl border border-white/60 bg-white/90 px-6 py-5 shadow-lg shadow-slate-300/30 backdrop-blur-xl dark:border-slate-800/70 dark:bg-slate-900/80 dark:shadow-black/40 md:hidden">
+            <div className="flex flex-col gap-4 text-base font-semibold text-slate-800 dark:text-slate-100">
+              {navLinks.map((link) => (
+                link.href.startsWith('#') ? (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className="flex items-center justify-between rounded-xl bg-white/70 px-4 py-3 shadow-inner shadow-white/40 ring-1 ring-slate-100/70 transition hover:-translate-y-0.5 hover:ring-blue-200 dark:bg-slate-800/60 dark:ring-slate-700/80"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                    <span aria-hidden className="text-blue-600 dark:text-blue-300">
+                      {ArrowIcon}
+                    </span>
+                  </a>
+                ) : (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="flex items-center justify-between rounded-xl bg-white/70 px-4 py-3 shadow-inner shadow-white/40 ring-1 ring-slate-100/70 transition hover:-translate-y-0.5 hover:ring-blue-200 dark:bg-slate-800/60 dark:ring-slate-700/80"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                    <span aria-hidden className="text-blue-600 dark:text-blue-300">
+                      {ArrowIcon}
+                    </span>
+                  </Link>
+                )
+              ))}
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 px-4 py-3 text-white shadow-lg shadow-blue-500/30 transition hover:shadow-xl"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Let&apos;s talk
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M7.293 14.707a1 1 0 010-1.414L11.586 9 7.293 4.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        )}
       </nav>
 
       <main>
         {/* Hero Section */}
         <section className="relative overflow-hidden">
           <div className="absolute inset-0">
-            <div className="absolute -top-32 -left-32 h-80 w-80 rounded-full bg-blue-200/40 blur-3xl dark:bg-blue-500/20" />
-            <div className="absolute bottom-0 right-0 h-96 w-96 bg-gradient-to-br from-purple-200/50 via-blue-200/40 to-transparent dark:from-blue-500/10 dark:via-purple-500/10 dark:to-transparent blur-3xl" />
+            <div className="absolute -top-32 -left-24 h-96 w-96 rounded-full bg-gradient-to-br from-blue-200/60 via-sky-200/40 to-transparent blur-3xl dark:from-blue-500/20 dark:via-indigo-500/10" />
+            <div className="absolute bottom-0 right-0 h-[28rem] w-[28rem] bg-gradient-to-br from-purple-200/50 via-blue-200/40 to-transparent dark:from-blue-500/10 dark:via-purple-500/10 dark:to-transparent blur-3xl" />
           </div>
-          <div className="relative px-6 py-24">
-            <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.15fr_1fr] gap-16 items-center">
-              <div>
-                <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white shadow-lg shadow-blue-500/10 dark:bg-slate-900 dark:shadow-blue-500/5 border border-slate-100 dark:border-slate-800">
-                  <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-600 text-white text-sm font-semibold">
-                    ✦
+          <div className="relative px-4 sm:px-6 py-20 sm:py-24">
+            <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-12 xl:gap-16 items-center">
+              <div className="space-y-8">
+                <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/80 shadow-lg shadow-blue-500/10 backdrop-blur dark:bg-slate-900/70 dark:shadow-blue-500/5 border border-slate-100/70 dark:border-slate-800">
+                  <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-blue-50 text-blue-600 shadow-inner shadow-blue-100 ring-1 ring-blue-100 dark:bg-blue-500/10 dark:text-blue-300 dark:ring-blue-500/30">
+                    {SparkIcon}
                   </span>
-                  <span className="text-sm font-medium text-slate-600 dark:text-slate-300">
+                  <span className="text-sm font-medium text-slate-600 dark:text-slate-300 tracking-tight">
                     Workshops, content & community for emerging leaders
                   </span>
                 </div>
-                <h2 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white">
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 drop-shadow-sm dark:text-white">
                   Where curiosity becomes
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">
                     {' '} brand-led growth
                   </span>
                 </h2>
-                <p className="mt-6 text-lg leading-relaxed text-slate-600 dark:text-slate-300 max-w-2xl">
+                <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300 max-w-2xl">
                   Join speaker and strategist Mayank Jain on a multidisciplinary journey through branding, automation and
                   business design. Learn how resilient founders craft memorable experiences, align teams and scale with
                   intention.
                 </p>
-                <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4">
                   <Link
                     href="/training"
-                    className="inline-flex items-center justify-center gap-3 px-8 py-3 rounded-full bg-blue-600 text-white font-semibold shadow-lg shadow-blue-500/20 hover:bg-blue-500 transition-transform hover:-translate-y-0.5"
+                    className="inline-flex items-center justify-center gap-3 px-8 py-3 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white font-semibold shadow-lg shadow-blue-500/30 transition-transform hover:-translate-y-0.5"
                   >
                     Book a Strategy Session
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                      <path d="M12.293 4.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H4a1 1 0 110-2h10.586l-2.293-2.293a1 1 0 010-1.414z" />
+                      <path d="M12.293 4.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 11-1.414-1.414L14.586 11H4a1 1 0 110-2h10.586l-2.293-2.293a1 1 0 010-1.414z" />
                     </svg>
                   </Link>
                   <a
                     href="https://www.instagram.com/curiouswithmayank/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-3 px-8 py-3 rounded-full border border-slate-300 bg-white/70 text-slate-700 backdrop-blur hover:border-blue-400 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-200 dark:hover:border-blue-500 dark:hover:text-blue-400 transition-all"
+                    className="inline-flex items-center justify-center gap-3 px-8 py-3 rounded-full border border-slate-300/80 bg-white/70 text-slate-700 backdrop-blur hover:border-blue-400 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-200 dark:hover:border-blue-500 dark:hover:text-blue-400 transition-all"
                   >
                     Watch the latest content
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
@@ -111,11 +196,11 @@ export default function Home() {
                     </svg>
                   </a>
                 </div>
-                <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
                   {[{ label: 'Years building businesses', value: '14+' }, { label: 'Teams coached', value: '15+' }, { label: 'Sales (B2B + B2C)', value: '₹100 Cr' }].map((stat) => (
                     <div
                       key={stat.label}
-                      className="rounded-2xl border border-white/70 bg-white/80 p-6 text-left shadow-lg shadow-slate-300/30 backdrop-blur dark:border-slate-700 dark:bg-slate-900/70 dark:shadow-black/40"
+                      className="rounded-2xl border border-white/70 bg-white/80 p-6 text-left shadow-lg shadow-slate-300/30 backdrop-blur ring-1 ring-slate-100/60 transition hover:-translate-y-0.5 hover:shadow-xl dark:border-slate-700 dark:bg-slate-900/70 dark:shadow-black/40 dark:ring-white/5"
                     >
                       <p className="text-3xl font-bold text-slate-900 dark:text-white">{stat.value}</p>
                       <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{stat.label}</p>
@@ -124,7 +209,7 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <div className="relative overflow-hidden rounded-3xl border border-white/80 bg-white/90 p-8 shadow-2xl shadow-blue-500/10 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/80 dark:shadow-blue-900/40">
+                <div className="relative overflow-hidden rounded-3xl border border-white/80 bg-white/90 p-8 shadow-2xl shadow-blue-500/10 backdrop-blur-xl ring-1 ring-slate-100/80 dark:border-slate-800 dark:bg-slate-900/80 dark:shadow-blue-900/40 dark:ring-white/5">
                   <div className="absolute -top-16 -right-10 h-40 w-40 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 blur-2xl" />
                   <div className="relative">
                     <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400">
@@ -140,7 +225,7 @@ export default function Home() {
                     <ul className="mt-6 space-y-4 text-sm text-slate-600 dark:text-slate-300">
                       {['Brand positioning frameworks that scale with your ambition', 'Automation workflows that feel human-first', 'Community-powered learning with candid founder stories'].map((item) => (
                         <li key={item} className="flex items-start gap-3">
-                          <span className="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-500/10 dark:text-blue-300">
+                          <span className="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-50 text-blue-600 shadow-inner shadow-blue-100 ring-1 ring-blue-100 dark:bg-blue-500/10 dark:text-blue-300 dark:ring-blue-500/30">
                             <svg className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                               <path d="M6.173 14.727a1 1 0 01-1.414 0l-3.486-3.486a1 1 0 111.414-1.414L5.466 12.6l7.847-7.846a1 1 0 111.414 1.414L6.173 14.727z" />
                             </svg>
@@ -149,7 +234,7 @@ export default function Home() {
                         </li>
                       ))}
                     </ul>
-                    <div className="mt-8 rounded-2xl border border-blue-100 bg-blue-50/70 p-6 text-slate-700 dark:border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-100">
+                    <div className="mt-8 rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50/80 via-white/70 to-blue-100/70 p-6 text-slate-700 shadow-inner shadow-blue-100/60 dark:border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-100">
                       <p className="font-semibold">Upcoming Live Session</p>
                       <p className="mt-2 text-sm leading-relaxed">
                         &ldquo;Designing onboarding journeys that convert&rdquo; – a 90 minute interactive workshop featuring real
@@ -173,7 +258,7 @@ export default function Home() {
         </section>
 
         {/* Signature Programs */}
-        <section className="px-6 py-20 bg-white/90 dark:bg-slate-900/60">
+        <section className="px-4 sm:px-6 py-20">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10">
               <div className="max-w-2xl">
@@ -217,7 +302,7 @@ export default function Home() {
               }].map((program) => (
                 <div
                   key={program.title}
-                  className="relative overflow-hidden rounded-3xl border border-slate-100 bg-white p-8 shadow-xl shadow-slate-200/40 transition-transform hover:-translate-y-1 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-900/80 dark:shadow-black/30"
+                  className="relative overflow-hidden rounded-3xl border border-white/60 bg-white/80 p-8 shadow-xl shadow-slate-200/40 backdrop-blur ring-1 ring-slate-100/80 transition-transform hover:-translate-y-1 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-900/80 dark:ring-white/5 dark:shadow-black/30"
                 >
                   <div className={`absolute -top-12 -right-12 h-32 w-32 rounded-full bg-gradient-to-br ${program.accent} blur-2xl`} />
                   <div className="relative">
@@ -335,7 +420,7 @@ export default function Home() {
         </section>
 
         {/* Experience Journey */}
-        <section className="px-6 py-20 bg-white dark:bg-slate-900">
+        <section className="px-6 py-20 bg-white/80 backdrop-blur dark:bg-slate-900">
           <div className="max-w-7xl mx-auto">
             <div className="max-w-2xl">
               <h3 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">
@@ -384,7 +469,7 @@ export default function Home() {
                   key={step.title}
                   className="rounded-3xl border border-slate-100 bg-white/80 p-8 shadow-lg shadow-slate-200/40 transition-all hover:-translate-y-1 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-900/70 dark:shadow-black/30"
                 >
-                  <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 dark:bg-blue-500/10 dark:text-blue-300">
+                  <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 ring-1 ring-blue-100/70 dark:bg-blue-500/10 dark:text-blue-300 dark:ring-blue-500/30">
                     {step.icon}
                   </div>
                   <h4 className="text-xl font-semibold text-slate-900 dark:text-white">{step.title}</h4>
@@ -396,19 +481,19 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="px-6 py-20 bg-slate-50 dark:bg-slate-950">
+        <section id="about" className="px-6 py-20 bg-slate-50/90 dark:bg-slate-950">
           <div className="max-w-7xl mx-auto grid gap-16 lg:grid-cols-[1.1fr_0.9fr] items-center">
-            <div>
+            <div className="space-y-6">
               <p className="text-sm font-semibold uppercase tracking-[0.4em] text-blue-600 dark:text-blue-400">Meet the host</p>
-              <h3 className="mt-6 text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">
+              <h3 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">
                 Mayank Jain
               </h3>
-              <p className="mt-4 text-lg leading-relaxed text-slate-600 dark:text-slate-300">
+              <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
                 A self-taught entrepreneur and computer engineer by training, Mayank has spent 14+ years at the
                 intersection of sales, marketing and technology. His curiosity-fuelled approach uncovers the human stories
                 behind data and transforms them into brand systems that grow with your ambitions.
               </p>
-              <ul className="mt-8 space-y-4 text-sm text-slate-600 dark:text-slate-300">
+              <ul className="space-y-4 text-sm text-slate-600 dark:text-slate-300">
                 {[
                   {
                     key: 'distk',
@@ -446,7 +531,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-12 rounded-3xl border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/40 dark:border-slate-800 dark:bg-slate-900/70 dark:shadow-black/30">
+              <div className="rounded-3xl border border-slate-200 bg-white/80 p-8 shadow-lg shadow-slate-200/40 ring-1 ring-slate-100/80 dark:border-slate-800 dark:bg-slate-900/70 dark:shadow-black/30 dark:ring-white/5">
                 <blockquote className="text-lg italic text-slate-700 dark:text-slate-200">
                   “I believe curiosity is a leadership muscle. The more we practice it, the more humane and joyful our
                   businesses become.”
@@ -458,7 +543,7 @@ export default function Home() {
             </div>
             <div className="relative">
               <div className="absolute -top-10 -right-8 h-32 w-32 rounded-full bg-blue-400/20 blur-3xl" />
-              <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-10 shadow-xl shadow-slate-200/50 dark:border-slate-800 dark:bg-slate-900/70 dark:shadow-black/40">
+              <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/90 p-10 shadow-xl shadow-slate-200/50 ring-1 ring-slate-100/70 dark:border-slate-800 dark:bg-slate-900/70 dark:shadow-black/40 dark:ring-white/5">
                 <div className="flex flex-col gap-6">
                   <div>
                     <h4 className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-600 dark:text-blue-400">
@@ -475,7 +560,7 @@ export default function Home() {
                       </div>
                     ))}
                   </div>
-                  <div className="rounded-2xl border border-blue-100 bg-blue-50/70 p-6 text-sm text-slate-700 dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-100">
+                  <div className="rounded-2xl border border-blue-100 bg-blue-50/70 p-6 text-sm text-slate-700 shadow-inner shadow-blue-100/60 dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-100">
                     <p className="font-semibold">Let&apos;s co-create your story</p>
                     <p className="mt-2 leading-relaxed">
                       Share your current challenge and we&apos;ll build a bespoke roadmap—combining content, coaching and
