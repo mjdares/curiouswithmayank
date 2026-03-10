@@ -629,7 +629,7 @@ export default function Home() {
           
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <p>&copy; 2025 Curious with Mayank. All rights reserved.</p>
+              <p>&copy; 2026 Curious with Mayank. All rights reserved.</p>
               <div className="flex space-x-6">
                 <a href="https://distk.in" className="hover:text-white transition-colors">
                   Distk.in

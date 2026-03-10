@@ -69,161 +69,172 @@ const PhoneIcon = ({ className }: { className?: string }) => (
 
 export default function ThankYou() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 dark:from-gray-900 dark:to-green-900">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-100 text-slate-900 dark:from-slate-950 dark:via-slate-950 dark:to-slate-900">
+      <div
+        className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(16,185,129,0.08),transparent_35%),radial-gradient(circle_at_80%_0%,rgba(59,130,246,0.08),transparent_30%),radial-gradient(circle_at_50%_80%,rgba(167,139,250,0.06),transparent_35%)]"
+        aria-hidden
+      />
+
       {/* Navigation */}
-      <nav className="px-6 py-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-gray-900 dark:text-white">
+      <nav className="sticky top-0 z-50 px-4 sm:px-6 py-4">
+        <div className="max-w-7xl mx-auto flex items-center justify-between rounded-2xl border border-white/50 bg-white/70 px-4 sm:px-6 py-3 shadow-lg shadow-slate-300/30 backdrop-blur-xl dark:border-slate-800/70 dark:bg-slate-900/70 dark:shadow-black/40">
+          <Link href="/" className="text-2xl font-bold text-slate-900 dark:text-white">
             Curious with Mayank
           </Link>
-          <div className="hidden md:flex space-x-8">
-            <Link href="/#about" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">About</Link>
-            <Link href="/brand-kickstart" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Brand Kickstart</Link>
-            <Link href="/training" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Training</Link>
-            <Link href="/podcast" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Podcast</Link>
-            <Link href="/contact" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contact</Link>
+          <div className="hidden md:flex items-center gap-6 text-sm font-medium">
+            <Link href="/#about" className="text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-300 transition-colors">About</Link>
+            <Link href="/brand-kickstart" className="text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-300 transition-colors">Brand Kickstart</Link>
+            <Link href="/training" className="text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-300 transition-colors">Training</Link>
+            <Link href="/podcast" className="text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-300 transition-colors">Podcast</Link>
+            <Link href="/contact" className="text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-300 transition-colors">Contact</Link>
           </div>
+          <Link
+            href="/contact"
+            className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/60 bg-slate-900 text-white shadow-md shadow-blue-500/30 transition-all hover:-translate-y-0.5 hover:bg-blue-600 dark:border-slate-700 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
+          >
+            <span>Let&apos;s talk</span>
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M7.293 14.707a1 1 0 010-1.414L11.586 9 7.293 4.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" />
+            </svg>
+          </Link>
         </div>
       </nav>
 
-      {/* Success Message */}
-      <section className="px-6 py-20">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Success Icon */}
-          <div className="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-8">
-            <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-          </div>
+      <main>
+        {/* Success Message */}
+        <section className="relative overflow-hidden px-4 sm:px-6 py-20">
+          <div className="absolute -top-32 -left-24 h-96 w-96 rounded-full bg-gradient-to-br from-emerald-200/60 via-green-200/40 to-transparent blur-3xl dark:from-emerald-500/20 dark:via-green-500/10" />
+          <div className="absolute bottom-0 right-0 h-[28rem] w-[28rem] bg-gradient-to-br from-blue-200/50 via-emerald-200/40 to-transparent blur-3xl dark:from-blue-500/10 dark:via-emerald-500/10" />
 
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-            Thank You!
-          </h1>
-          
-          <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-xl mb-8">
-            <h2 className="text-2xl font-semibold text-green-600 dark:text-green-400 mb-4">
-              We&apos;ve Received Your Request
-            </h2>
-            <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-              Thank you for your interest in our Brand Kickstart service! We&apos;ve received all your details and 
-              are excited to help you launch your business online.
+          <div className="relative max-w-4xl mx-auto text-center">
+            {/* Success Icon */}
+            <div className="w-24 h-24 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg shadow-emerald-500/30">
+              <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
+              Thank You!
+            </h1>
+
+            <div className="rounded-3xl border border-white/60 bg-white/80 p-8 shadow-xl shadow-slate-200/40 backdrop-blur ring-1 ring-slate-100/80 dark:border-slate-800 dark:bg-slate-900/80 dark:ring-white/5 dark:shadow-black/30 mb-8 text-left">
+              <h2 className="text-2xl font-semibold text-emerald-600 dark:text-emerald-400 mb-4 text-center">
+                We&apos;ve Received Your Request
+              </h2>
+              <p className="text-lg text-slate-600 dark:text-slate-300 mb-6 text-center">
+                Thank you for your interest in our Brand Kickstart service! We&apos;ve received all your details and
+                are excited to help you launch your business online.
+              </p>
+
+              <div className="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 p-6 rounded-2xl mb-6">
+                <h3 className="text-lg font-medium text-emerald-800 dark:text-emerald-400 mb-3">
+                  What Happens Next?
+                </h3>
+                <div className="space-y-2 text-emerald-700 dark:text-emerald-300">
+                  <p className="flex items-start gap-2">
+                    <CheckIcon className="w-4 h-4 mt-0.5 text-emerald-700 dark:text-emerald-300 shrink-0" />
+                    <span><strong>Within 24 hours:</strong> We&apos;ll review your requirements and contact you</span>
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <CheckIcon className="w-4 h-4 mt-0.5 text-emerald-700 dark:text-emerald-300 shrink-0" />
+                    <span><strong>Strategy Call:</strong> 30-minute discussion about your vision and project details</span>
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <CheckIcon className="w-4 h-4 mt-0.5 text-emerald-700 dark:text-emerald-300 shrink-0" />
+                    <span><strong>Proposal:</strong> Detailed quote and timeline based on your needs</span>
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <CheckIcon className="w-4 h-4 mt-0.5 text-emerald-700 dark:text-emerald-300 shrink-0" />
+                    <span><strong>Project Start:</strong> Once approved, we begin creating your professional online presence</span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div className="bg-blue-50 dark:bg-blue-900/20 p-5 rounded-2xl">
+                  <h4 className="font-medium text-blue-800 dark:text-blue-400 mb-2 flex items-center gap-2">
+                    <MailIcon className="w-4 h-4" />
+                    <span>Check Your Email</span>
+                  </h4>
+                  <p className="text-sm text-blue-700 dark:text-blue-300">
+                    You&apos;ll receive a confirmation email shortly with your submission details.
+                  </p>
+                </div>
+                <div className="bg-purple-50 dark:bg-purple-900/20 p-5 rounded-2xl">
+                  <h4 className="font-medium text-purple-800 dark:text-purple-400 mb-2 flex items-center gap-2">
+                    <PhoneIcon className="w-4 h-4" />
+                    <span>Questions?</span>
+                  </h4>
+                  <p className="text-sm text-purple-700 dark:text-purple-300">
+                    Feel free to reach out if you have any immediate questions or concerns.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/brand-kickstart"
+                className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white shadow-lg shadow-blue-500/30 transition-all hover:-translate-y-0.5 hover:shadow-xl font-medium"
+              >
+                Back to Brand Kickstart
+              </Link>
+              <Link
+                href="/"
+                className="inline-flex items-center justify-center px-8 py-3 rounded-full border border-slate-200 bg-white/80 text-slate-700 shadow-md backdrop-blur transition-all hover:-translate-y-0.5 hover:shadow-lg font-medium dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-200"
+              >
+                Home Page
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-emerald-600 text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-emerald-700 font-medium"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Additional Info */}
+        <section className="px-4 sm:px-6 py-20">
+          <div className="max-w-4xl mx-auto text-center">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
+              Ready to Build Momentum
+            </h3>
+            <p className="text-slate-600 dark:text-slate-300 mb-8">
+              While you wait for our call, here are some things you can start thinking about:
             </p>
-            
-            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 p-6 rounded-lg mb-6">
-              <h3 className="text-lg font-medium text-green-800 dark:text-green-400 mb-3">
-                What Happens Next?
-              </h3>
-              <div className="text-left space-y-2 text-green-700 dark:text-green-300">
-                <p className="flex items-start gap-2">
-                  <CheckIcon className="w-4 h-4 mt-0.5 text-green-700 dark:text-green-300" />
-                  <span><strong>Within 24 hours:</strong> We&apos;ll review your requirements and contact you</span>
-                </p>
-                <p className="flex items-start gap-2">
-                  <CheckIcon className="w-4 h-4 mt-0.5 text-green-700 dark:text-green-300" />
-                  <span><strong>Strategy Call:</strong> 30-minute discussion about your vision and project details</span>
-                </p>
-                <p className="flex items-start gap-2">
-                  <CheckIcon className="w-4 h-4 mt-0.5 text-green-700 dark:text-green-300" />
-                  <span><strong>Proposal:</strong> Detailed quote and timeline based on your needs</span>
-                </p>
-                <p className="flex items-start gap-2">
-                  <CheckIcon className="w-4 h-4 mt-0.5 text-green-700 dark:text-green-300" />
-                  <span><strong>Project Start:</strong> Once approved, we begin creating your professional online presence</span>
-                </p>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-6 text-left">
-              <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-                <h4 className="font-medium text-blue-800 dark:text-blue-400 mb-2 flex items-center gap-2">
-                  <MailIcon className="w-4 h-4" />
-                  <span>Check Your Email</span>
-                </h4>
-                <p className="text-sm text-blue-700 dark:text-blue-300">
-                  You&apos;ll receive a confirmation email shortly with your submission details.
-                </p>
-              </div>
-              <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
-                <h4 className="font-medium text-purple-800 dark:text-purple-400 mb-2 flex items-center gap-2">
-                  <PhoneIcon className="w-4 h-4" />
-                  <span>Questions?</span>
-                </h4>
-                <p className="text-sm text-purple-700 dark:text-purple-300">
-                  Feel free to reach out if you have any immediate questions or concerns.
-                </p>
-              </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                { title: 'Visual Identity', desc: "Gather any existing logos, brand colors, or visual elements you'd like to incorporate.", color: 'from-blue-500/20 via-blue-500/10 to-transparent', iconColor: 'text-blue-600 dark:text-blue-400' },
+                { title: 'Content Ideas', desc: 'Think about key messages, services, and what makes your business unique.', color: 'from-emerald-500/20 via-emerald-500/10 to-transparent', iconColor: 'text-emerald-600 dark:text-emerald-400' },
+                { title: 'Social Accounts', desc: "Set up your social media accounts if you haven't already - we'll connect them all!", color: 'from-purple-500/20 via-purple-500/10 to-transparent', iconColor: 'text-purple-600 dark:text-purple-400' },
+              ].map((card) => (
+                <div
+                  key={card.title}
+                  className="relative overflow-hidden rounded-3xl border border-white/60 bg-white/80 p-6 shadow-xl shadow-slate-200/40 backdrop-blur ring-1 ring-slate-100/80 dark:border-slate-800 dark:bg-slate-900/80 dark:ring-white/5 dark:shadow-black/30"
+                >
+                  <div className={`absolute -top-12 -right-12 h-32 w-32 rounded-full bg-gradient-to-br ${card.color} blur-2xl`} />
+                  <div className="relative">
+                    <h4 className={`font-semibold mb-2 flex items-center justify-center gap-2 ${card.iconColor}`}>
+                      <InfoIcon className="w-4 h-4" />
+                      <span>{card.title}</span>
+                    </h4>
+                    <p className="text-sm text-slate-500 dark:text-slate-400">{card.desc}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/brand-kickstart"
-              className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
-            >
-              Back to Brand Kickstart
-            </Link>
-            <Link 
-              href="/"
-              className="px-8 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors font-medium"
-            >
-              Home Page
-            </Link>
-            <Link 
-              href="/contact"
-              className="px-8 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
-            >
-              Contact Us
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Additional Info */}
-      <section className="px-6 py-12 bg-white dark:bg-gray-800">
-        <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Ready to Build Momentum
-          </h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-6">
-            While you wait for our call, here are some things you can start thinking about:
-          </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-6 rounded-xl">
-              <h4 className="font-semibold text-blue-900 dark:text-blue-400 mb-2 flex items-center gap-2">
-                <InfoIcon className="w-4 h-4" />
-                <span>Visual Identity</span>
-              </h4>
-              <p className="text-sm text-blue-700 dark:text-blue-300">
-                Gather any existing logos, brand colors, or visual elements you&apos;d like to incorporate.
-              </p>
-            </div>
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-6 rounded-xl">
-              <h4 className="font-semibold text-green-900 dark:text-green-400 mb-2 flex items-center gap-2">
-                <InfoIcon className="w-4 h-4" />
-                <span>Content Ideas</span>
-              </h4>
-              <p className="text-sm text-green-700 dark:text-green-300">
-                Think about key messages, services, and what makes your business unique.
-              </p>
-            </div>
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-6 rounded-xl">
-              <h4 className="font-semibold text-purple-900 dark:text-purple-400 mb-2 flex items-center gap-2">
-                <InfoIcon className="w-4 h-4" />
-                <span>Social Accounts</span>
-              </h4>
-              <p className="text-sm text-purple-700 dark:text-purple-300">
-                Set up your social media accounts if you haven&apos;t already - we&apos;ll connect them all!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       {/* Footer */}
-      <footer className="px-6 py-12 bg-gray-900 text-gray-300">
+      <footer className="px-6 py-12 bg-slate-950 text-slate-300">
         <div className="max-w-7xl mx-auto text-center">
-          <p>&copy; 2025 Curious with Mayank. All rights reserved.</p>
-          <p className="text-sm text-gray-400 mt-2">
+          <p>&copy; 2026 Curious with Mayank. All rights reserved.</p>
+          <p className="text-sm text-slate-400 mt-2">
             Thank you for choosing Brand Kickstart - Your journey to professional online presence starts now!
           </p>
         </div>
